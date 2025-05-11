@@ -44,13 +44,13 @@ export default function HomePage() {
         </nav>
       </header>
 
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Check, Compare and Switch!
             </h1>
-            <p className="text-2xl md:text-3xl font-medium text-emerald-400">
+            <p className="text-2xl md:text-2xl font-medium text-emerald-400">
               Benefit from exclusive discounts and special offers tailored to
               maximise savings.
             </p>
