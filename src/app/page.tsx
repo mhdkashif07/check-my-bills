@@ -12,6 +12,7 @@ import {
 
 // import { Button } from "@/components/ui/button";
 import { MobileNav } from "@/components/MobileNav";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
@@ -88,6 +89,7 @@ export default function HomePage() {
       </main>
 
       {/* <BusinessDropdown /> */}
+      <Footer />
     </div>
   );
 }
