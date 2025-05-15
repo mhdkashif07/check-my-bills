@@ -1,6 +1,8 @@
 import type React from "react";
 import "@/app/globals.css";
 import { Inter } from "next/font/google";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 // import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,15 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {/* <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        > */}
+      <body className={`${inter.className} bg-[#0a1128]`}>
+        <Header />
         {children}
-        {/* </ThemeProvider> */}
+        <Footer />
       </body>
     </html>
   );
