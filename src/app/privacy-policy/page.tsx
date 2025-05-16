@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
 
       {/* Main Content */}
       <main className="flex-grow bg-[#212529] text-white py-11">
-        <div className="  mx-auto px-4 w-full sm:max-w-xl md:max-w-2xl lg:max-w-5xl xl:max-w-5xl">
+        <div className="  mx-auto px-4 w-full sm:max-w-xl md:max-w-2xl lg:max-w-5xl xl:max-w-6xl">
           <section className="mb-8">
             <p className="mb-13 text-base">
               Please read our privacy policy carefully as it aims to elaborate
