@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-[#042e63b3] text-[14px]">
+    <footer className="bg-[#012348] text-[14px]">
       <div className="mx-auto max-w-6xl px-4 text-white pt-[6.6rem] pb-[6.9rem]">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -51,6 +51,14 @@ const Footer = () => {
                 <li>
                   <Link href="/privacy-policy" className="hover:text-gray-300">
                     Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/complaints-policy"
+                    className="hover:text-gray-300"
+                  >
+                    Complaints Policy
                   </Link>
                 </li>
                 <li>
@@ -120,25 +128,26 @@ const Footer = () => {
                 </button>
               </div>
               <p className="mt-4">Our expertise always ready to assist you.</p>
-              <div className="flex space-x-4 mt-4 md:justify-start justify-center">
+              <div className="flex gap-4 mt-4">
                 <Link
-                  href="#"
-                  aria-label="Facebook"
+                  href=""
+                  aria-label="Instagram"
                   className="hover:text-[#fe2d00] transition-colors duration-500"
                 >
                   <Facebook className="h-5 w-5" />
                 </Link>
+
                 <Link
-                  href="#"
+                  href="https://www.instagram.com/checkmybills/"
                   aria-label="Instagram"
                   className="hover:text-[#fe2d00] transition-colors duration-500"
                 >
                   <Instagram className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="#"
-                  aria-label="TikTok"
-                  className="text-white hover:text-[#fe2d00] transition-colors duration-500"
+                  href="https://www.youtube.com/@checkmybills-co-uk/"
+                  aria-label="YouTube"
+                  className="hover:text-[#fe2d00] transition-colors duration-500"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -151,10 +160,8 @@ const Footer = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
-                    <path d="M9 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
-                    <path d="M15 8a4 4 0 0 0 0 8V8z" />
-                    <path d="M15 2v6" />
-                    <path d="M15 8h-2" />
+                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
                   </svg>
                 </Link>
               </div>

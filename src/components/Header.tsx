@@ -10,12 +10,14 @@ const Header = () => {
       <div className=" mx-auto max-w-6xl px-4">
         <nav className="flex items-center justify-between ">
           <div className="flex items-center gap-2">
-            <Image
-              src="/checkbillslogo.svg"
-              alt="SwitchPal"
-              width={200}
-              height={200}
-            />
+            <Link href="/">
+              <Image
+                src="/checkbillslogo.svg"
+                alt="SwitchPal"
+                width={200}
+                height={200}
+              />
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center gap-6">
