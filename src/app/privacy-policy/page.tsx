@@ -1,24 +1,12 @@
-"use client";
-
-import { useState } from "react";
-
 export default function PrivacyPolicy() {
-  const [activeSection, setActiveSection] = useState<string | null>(null);
-
-  const toggleSection = (section: string) => {
-    if (activeSection === section) {
-      setActiveSection(null);
-    } else {
-      setActiveSection(section);
-    }
-  };
-
   return (
     <div className=" flex flex-col min-h-screen">
       {/* Header */}
       <header className="bg-[#6C757D] py-[3.3rem]">
         <div className="container mx-auto px-4">
-          <h1 className="text-white text-4xl text-center font-bold">PRIVACY POLICY</h1>
+          <h1 className="text-white text-4xl text-center font-bold">
+            PRIVACY POLICY
+          </h1>
         </div>
       </header>
 
@@ -95,26 +83,24 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
 
-          {activeSection === "about" || !activeSection ? (
-            <section className="mb-11">
-              <h2 className="text-xl d mb-2">ABOUT THIS PRIVACY POLICY</h2>
-              <p className="mb-4">
-                This Privacy Policy set out the rules of collecting, preserving,
-                using, processing, maintaining, protecting, and disclosing the
-                information that we gather from you or you provide us when you
-                interact, visit, or use our website. We collect
-              </p>
-            </section>
-          ) : null}
+          <section className="mb-11">
+            <h2 className="text-xl d mb-2">ABOUT THIS PRIVACY POLICY</h2>
+            <p className="mb-4">
+              This Privacy Policy set out the rules of collecting, preserving,
+              using, processing, maintaining, protecting, and disclosing the
+              information that we gather from you or you provide us when you
+              interact, visit, or use our website. We collect
+            </p>
+          </section>
 
           <section className="mb-8">
             <h2 className="text-xl mb-2">HOW WE COLLECT INFORMATION</h2>
             <p className="mb-13">
-              We gather, receive and retain user's personal data by using
+              We gather, receive and retain user&apos;s personal data by using
               various methods that are necessary for certifying information
-              related to visitor/user's identification and to make it possible
-              to make payments, send receipts and create internal reports. We
-              may collect your data through:
+              related to visitor/user&apos;s identification and to make it
+              possible to make payments, send receipts and create internal
+              reports. We may collect your data through:
             </p>
 
             <p className="mb-2" style={{ lineHeight: "1.8rem" }}>
@@ -423,20 +409,20 @@ export default function PrivacyPolicy() {
             <h2 className="text-xl mb-2">LINKED WEBSITES</h2>
             <p className="mb-10">
               This website might include links to third-party websites
-              ("Third-Party Websites"). We don't operate or control these sites
-              and are not responsible for any loss, risk, or damage stemming
-              from their content or actions. We don't endorse, sponsor,
-              guarantee, or vouch for any Third-Party Websites. As such, we
-              can't be held accountable for how these sites handle your personal
-              data. We highly recommend checking the Privacy Policy of any site
-              you visit.
+              (&quot;Third-Party Websites&quot;). We don&apos;t operate or
+              control these sites and are not responsible for any loss, risk, or
+              damage stemming from their content or actions. We don&apos;t
+              endorse, sponsor, guarantee, or vouch for any Third-Party
+              Websites. As such, we can&apos;t be held accountable for how these
+              sites handle your personal data. We highly recommend checking the
+              Privacy Policy of any site you visit.
             </p>
           </section>
 
           <section className="mb-13">
             <h2 className="text-xl mb-2">DATA SECURITY</h2>
             <p className="mb-2">
-              It's important to recognize that transmitting data over the
+              It&apos;s important to recognize that transmitting data over the
               Internet or storing it electronically can never be entirely
               foolproof. While we control physical access, security, we are
               committed to enhancing online protection by reviewing our security
@@ -455,14 +441,14 @@ export default function PrivacyPolicy() {
               We retain the authority to make changes, modifications, or updates
               to this privacy policy periodically, without prior notification,
               to comply with prevailing standards. If there are significant
-              alterations, we'll inform you through our email service or by
+              alterations, we&apos;ll inform you through our email service or by
               displaying the updated privacy policy on our website. When
-              updating the "Last Modified Date" at the beginning of this policy.
-              Continuing to use our services after the publication of the
-              updated privacy policy signifies your acceptance of the changes.
-              We recommend checking our website or the formal about page for the
-              most recent version of our privacy policy, which will be published
-              on our site.
+              updating the &quot;Last Modified Date&quot; at the beginning of
+              this policy. Continuing to use our services after the publication
+              of the updated privacy policy signifies your acceptance of the
+              changes. We recommend checking our website or the formal about
+              page for the most recent version of our privacy policy, which will
+              be published on our site.
             </p>
           </section>
 

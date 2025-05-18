@@ -1,18 +1,4 @@
-"use client";
-
-import { useState } from "react";
-
 export default function ComplaintsPolicy() {
-  const [activeSection, setActiveSection] = useState<string | null>(null);
-
-  const toggleSection = (section: string) => {
-    if (activeSection === section) {
-      setActiveSection(null);
-    } else {
-      setActiveSection(section);
-    }
-  };
-
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
@@ -62,9 +48,9 @@ export default function ComplaintsPolicy() {
             <h2 className="text-xl mb-4">Step 3</h2>
             <p className="mb-4">
               If your Step 2 complaint remains unresolved within 2 working days
-              or if we're unable to provide a satisfactory way forward within an
-              agreed timeframe, we will escalate the matter to one of our
-              directors.
+              or if we&apos;re unable to provide a satisfactory way forward
+              within an agreed timeframe, we will escalate the matter to one of
+              our directors.
             </p>
           </section>
 
@@ -83,8 +69,8 @@ export default function ComplaintsPolicy() {
             <h2 className="text-xl mb-4">Step 5</h2>
             <p className="mb-4">
               After 10 working days of raising your Step 3 complaint, if we
-              still haven't been able to agree on a resolution, we will reassess
-              the case with fresh eyes and work to propose alternative
+              still haven&apos;t been able to agree on a resolution, we will
+              reassess the case with fresh eyes and work to propose alternative
               solutions.
             </p>
           </section>
@@ -92,11 +78,11 @@ export default function ComplaintsPolicy() {
           <section className="mb-8">
             <h2 className="text-xl mb-4">Step 6</h2>
             <p className="mb-4">
-              If, after 8 weeks from when your complaint was first raised, we're
-              unable to reach a resolution that satisfies both parties, we will
-              declare the case to be in deadlock. At this stage, you can access
-              a free and impartial dispute resolution service provided by the
-              Energy Ombudsman.
+              If, after 8 weeks from when your complaint was first raised,
+              we&apos;re unable to reach a resolution that satisfies both
+              parties, we will declare the case to be in deadlock. At this
+              stage, you can access a free and impartial dispute resolution
+              service provided by the Energy Ombudsman.
             </p>
           </section>
 
