@@ -19,6 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <script
+        src=" https://whitelabels.stickeebroadband.co.uk/js/loader.js"
+        async
+      ></script>
       <body className={`${inter.className}`}>
         <Header />
         {children}
