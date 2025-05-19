@@ -36,8 +36,8 @@ export default function ComparisonFeatures() {
           <Image
             src="/compare-info.jpg"
             alt="Customer Service"
-            width={400}
-            height={300}
+            width={600}
+            height={500}
             className="rounded-xl shadow-lg object-cover"
           />
         </div>

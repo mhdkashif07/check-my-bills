@@ -10,7 +10,7 @@ const faqs = [
     answer: (
       <>
         
-        <p><a href="/" className="text-[#fe2d00]">CheckMyBills.co.uk</a>  provides a free, independent, and impartial comparison service to help you save on:</p>
+        <p className="mt-5"><a href="/" className="text-[#fe2d00]">CheckMyBills.co.uk</a>  provides a free, independent, and impartial comparison service to help you save on:</p>
         <ul className="list-disc pt-3 pl-8 space-y-2">
           <li><b>Energy:</b> Compare electricity and gas suppliers for the best rates.</li>
           <li><b>Broadband:</b> Find affordable, high-speed internet deals.</li>
@@ -27,7 +27,7 @@ const faqs = [
     question: "2. How does the comparison process work?",
     answer: (
       <>
-        <p>
+        <p className="mt-5">
           It’s quick and hassle-free!
         </p>
         
@@ -45,7 +45,7 @@ const faqs = [
     question: "3. Is CheckMyBills affiliated with any providers?",
     answer: (
       <>
-        <p>
+        <p className="mt-5">
           We are <strong>independent</strong>  for utilities like energy, broadband, and mobile services. For <b>insurance products</b> , we partner with reliable UK-based <b>independent</b>  provider to bring you exclusive deals. These partnerships allow us to provide competitive offers while maintaining transparency.
         </p>
       </>
@@ -55,7 +55,7 @@ const faqs = [
     question: "4. How much does it cost to use CheckMyBills?",
     answer: (
       <>
-        <p>
+        <p className="mt-5">
           It’s <b> free to use!</b> Whether you’re comparing utilities or insurance products, there’s no charge for using our service.
 
 
@@ -68,7 +68,7 @@ const faqs = [
     question: "5. How accurate are the deals shown on CheckMyBills?",
     answer: (
       <>
-        <p>
+        <p className="mt-5">
           We source deals directly from providers and update them regularly. For insurance comparisons, we work with <b> trusted partners</b> to ensure you get the most accurate and competitive quotes.
         </p>
       </>
