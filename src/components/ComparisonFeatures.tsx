@@ -34,7 +34,7 @@ export default function ComparisonFeatures() {
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         <div className="flex-shrink-0 w-full md:w-1/2 flex justify-center">
           <Image
-            src="/callcenter-woman.jpg"
+            src="/compare-info.jpg"
             alt="Customer Service"
             width={400}
             height={300}

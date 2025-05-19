@@ -210,8 +210,8 @@ const page = () => {
             </p>
           </section>
 
-          <h1 className="text-xl mt-11">MODIFICATIONS TO THE SERVICES</h1>
-          <p className="my-12">
+          <h1 className="text-xl mt-12 mb-2">MODIFICATIONS TO THE SERVICES</h1>
+          <p className="mb-12">
             We reserve the right to adapt or amend our offerings to your
             benefit. These changes could relate to certain features of the
             services, or possibly the introduction of products. Such
@@ -229,10 +229,10 @@ const page = () => {
           <p className="mb-4 leading-8">
             d) the fees and costs associated with our chargeable services; and
           </p>
-          <p className="mb-9 leading-8">
+          <p className=" leading-8">
             e) any other services provided by this platform.
           </p>
-          <p className="mb-10">
+          <p className="my-11">
             Such modifications may be temporary or permanent and may be made
             with or without prior notice. The modified agreement shall become
             effective and binding upon your assent to the updated terms. It is
@@ -270,14 +270,14 @@ const page = () => {
             using the Services, you release us from all liability arising from
             your use of any third-party website or service.
           </p>
-          <p>
+          <p  >
             We cannot anticipate or foresee technical or other difficulties that
             may result in data loss, personalization setting loss, or service
             interruptions. We are not responsible for the timeliness, accuracy,
             deletion, non-delivery, or failure to store any of your data,
             communications or personalization settings.
           </p>
-          <p className="my-11">
+          <p className="my-12">
             This website may contain links to Third Party Websites as well as
             content from third party sites. These sites and content are not
             managed, supervised, controlled, sponsored, or endorsed by us. You
@@ -352,17 +352,17 @@ const page = () => {
             k) To interfere with or bypass security features of the Services or
             related websites.
           </p>
-          <p className="my-9">
+          <p className="my-12">
             We reserve the right to terminate your use of the Services or
             related websites if you violate any of these prohibitions.
           </p>
 
-          <h1 className="text-xl  mb-6">
+          <h1 className="text-xl  mb-2">
             DISCLAIMER AND LIMITATION OF LIABILITY
           </h1>
-          <p className="mb-4">
+          <p >
             All information, products and services provided on the website are
-            offered &quot;AS IS&quot; and &quot;AS AVAILABLE,&quot; without any
+            offered <b>&quot;AS IS&quot; </b>  and &quot;AS AVAILABLE,&quot; without any
             express or implied warranties regarding quality, fitness for a
             specific purpose, merchantability, completeness, reliability, non-
             infringement, accuracy, or the absence of defects or correspondence
@@ -370,40 +370,40 @@ const page = () => {
             are responsible for any monetary system resulting, directly or
             indirectly from your use of the site.
           </p>
-          <p className="mb-6">
+          <p className="my-12">
             We and our affiliates do not guarantee uninterrupted, error-free
             site functionality or the absence of harmful components or viruses
             in the content.
           </p>
-          <p className="mb-6">
+          <p className="mb-12">
             We, along with our affiliates, directors, officers, employees,
             agents, or any parties involved in creating, producing, or
             delivering the site or its content, shall not be liable for any
             indirect, consequential, special, incidental, punitive, statutory,
             exemplary, or other damages arising from:
           </p>
-          <p className="mb-2">
+          <p className="mb-5 leading-8">
             a) The use or inability to use the site or its content;
           </p>
-          <p className="mb-2">
+          <p className="mb-4 leading-8">
             b) Malfunction, delay, interruption, or unavailability of our site
             portion;
           </p>
-          <p className="mb-2">
+          <p className="mb-4 leading-8">
             c) Acts or omissions of the site, third party service providers, or
             distributors;
           </p>
-          <p className="mb-2">
+          <p className="mb-4 leading-8">
             d) Claims related to viruses or harmful components affecting your
             equipment;
           </p>
-          <p className="mb-6">
+          <p className="mb-10 leading-8">
             e) Claims due to defamatory, offensive, or illegal actions of other
             users or third parties.
           </p>
 
-          <h1 className="text-xl  mb-6">INDEMNIFICATION</h1>
-          <p className="mb-6">
+          <h1 className="text-xl  mb-2">INDEMNIFICATION</h1>
+          <p className="mb-12">
             You agree to indemnify, defend, and hold harmless
             CheckInsights.co.uk and our subsidiaries, affiliates, partners,
             officers, directors, agents, contractors, licensors, service
@@ -414,52 +414,45 @@ const page = () => {
             violation of any law or the rights of a third-party.
           </p>
 
-          <h1 className="text-xl  mb-6">TERMINATION</h1>
-          <p className="mb-6">
+          <h1 className="text-xl  mb-2">TERMINATION</h1>
+          <p >
             These Terms are effective unless and until terminated by either you
             or us. You may terminate these Terms at any time by notifying us
             that you no longer wish to use our Services, or when you cease using
             our site.
           </p>
-          <p className="mb-6">
-            We may at any time, terminate the agreement and related privileges
-            without notice: a) if you have violated any provision of these Terms
-            or other agreements, including but not limited to, using the
-            Services for fraudulent activity; b) if you fail to comply with the
-            Terms; c) if required by law; d) if CheckInsights.co.uk is to be
-            discontinued; e) in response to a request by a governmental agency;
-            f) upon the provision of the Services to you; g, or otherwise,
-            disabled.
+          <p className="my-12">
+            We may at any time, terminate this agreement and cease providing services to you: a) if you have violated any provision of this Agreement (or have acted in a manner which clearly shows that you do not intend to, or are unable to comply with the provisions of this Agreement); or b) if Checkmybills.co.uk in its sole discretion believes it is required to do so by law (for example, where the provision of the Services to you is, or becomes, unlawful).
           </p>
 
           <h1 className="text-xl mb-6">GENERAL TERMS</h1>
-          <p className="mb-4">
-            A. GOVERNING LAW AND JURISDICTION This Agreement is to be governed
+          <p className="mb-5 leading-8">
+            a. <b>GOVERNING LAW AND JURISDICTION</b>  This Agreement is to be governed
             and interpreted in accordance with the laws of the United Kingdom.
             In the event of a conflict of laws, You agree that if any dispute or
             claim arises out of or in connection with this agreement, it shall
             be resolved or settled by the federal courts of the United Kingdom
             having exclusive jurisdiction.
           </p>
-          <p className="mb-4">
-            B. ENTIRE AGREEMENT These Terms and Conditions constitute the entire
+          <p className="mb-5 leading-8">
+            b. <b>  ENTIRE AGREEMENT</b> These Terms and Conditions constitute the entire
             agreement between you and CheckInsights.co.uk and override and
             terminate all prior agreements and understandings whether express or
             implied, written or oral.
           </p>
-          <p className="mb-4">
-            C. HEADINGS Headings of paragraphs used in this agreement are only
+          <p className="mb-5 leading-8">
+            c. <b> HEADINGS</b> Headings of paragraphs used in this agreement are only
             for convenience.
           </p>
-          <p className="mb-4">
-            D. SEVERABILITY If any term, provision of this Agreement is deemed
+          <p className="mb-4 leading-8">
+            d. <b> SEVERABILITY</b> If any term, provision of this Agreement is deemed
             to be invalid, unlawful, unenforceable, or in conflict with any law
             of a federal, state, or local government having jurisdiction over
             this agreement, the remaining provisions shall continue to be valid
             and enforceable.
           </p>
-          <p className="mb-6">
-            E. FORCE MAJEURE We shall not be held responsible for any delay or
+          <p className="mb-10 leading-8">
+            e. <b> FORCE MAJEURE </b>We shall not be held responsible for any delay or
             failure to perform all or any part of its obligations under this
             Agreement if such failure or delay is directly or indirectly caused
             by circumstances beyond its control, including but not limited to,
@@ -469,8 +462,8 @@ const page = () => {
             government regulation, or civil or military authority.
           </p>
 
-          <h1 className="text-xl mb-6">CONTACT US</h1>
-          <p className="mb-6">
+          <h1 className="text-xl mb-2">CONTACT US</h1>
+          <p className="mb-9">
             If you have any questions or queries regarding the terms and
             conditions of this website or to receive further information
             regarding the use of the Site, please contact us via email at

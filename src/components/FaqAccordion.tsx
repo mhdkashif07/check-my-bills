@@ -6,30 +6,70 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "Why should I use SwitchPal?",
+    question: "1. What services does CheckMyBills offer?",
     answer: (
       <>
-        <p>
-          SwitchPal partners with leading suppliers to find the best deal for
-          you, saving you time and money when searching for products or
-          services.
-        </p>
+        
+        <p><a href="/" className="text-[#fe2d00]">CheckMyBills.co.uk</a>  provides a free, independent, and impartial comparison service to help you save on:</p>
+        <ul className="list-disc pt-3 pl-8 space-y-2">
+          <li><b>Energy:</b> Compare electricity and gas suppliers for the best rates.</li>
+          <li><b>Broadband:</b> Find affordable, high-speed internet deals.</li>
+          <li><b>Mobile Phones and SIM-only Plans:</b> Choose from top deals tailored to your needs.</li>
+          <li><b>Insurance Products:</b> Discover and compare deals for car insurance, home insurance, Pet insurance, and more – in partnership with trusted UK providers.</li>
+       </ul>
         <p className="mt-4">
-          We allow you to compare prices, features, and reviews from multiple
-          providers in one place. This makes it easier to find the best deals
-          and make informed decisions about what you want to purchase.
+          We make it easy to save time and money by finding deals that fit your lifestyle
         </p>
       </>
     ),
   },
   {
-    question: "How does SwitchPal work?",
+    question: "2. How does the comparison process work?",
     answer: (
       <>
         <p>
-          SwitchPal works by aggregating offers from a wide range of trusted
-          suppliers. You simply enter your preferences, and we present you with
-          the best available options tailored to your needs.
+          It’s quick and hassle-free!
+        </p>
+        
+        <ul className=" list-disc py-4 pl-8 space-y-2 font-semibold">
+          <li> Provide a few details, like your postcode or current provider.:</li>
+          <li> View deals from top UK providers.:</li>
+          <li> Switch or sign up online with our guidance.:</li>
+        </ul>
+
+        <p>For insurance products, you’ll be directed to our <b> trusted affiliate</b> partners for final sign-up.</p>
+      </>
+    ),
+  },
+  {
+    question: "3. Is CheckMyBills affiliated with any providers?",
+    answer: (
+      <>
+        <p>
+          We are <strong>independent</strong>  for utilities like energy, broadband, and mobile services. For <b>insurance products</b> , we partner with reliable UK-based <b>independent</b>  provider to bring you exclusive deals. These partnerships allow us to provide competitive offers while maintaining transparency.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "4. How much does it cost to use CheckMyBills?",
+    answer: (
+      <>
+        <p>
+          It’s <b> free to use!</b> Whether you’re comparing utilities or insurance products, there’s no charge for using our service.
+
+
+
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "5. How accurate are the deals shown on CheckMyBills?",
+    answer: (
+      <>
+        <p>
+          We source deals directly from providers and update them regularly. For insurance comparisons, we work with <b> trusted partners</b> to ensure you get the most accurate and competitive quotes.
         </p>
       </>
     ),
