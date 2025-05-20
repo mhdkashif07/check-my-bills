@@ -3,6 +3,7 @@ import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Script from "next/script";
 // import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,10 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <script
-        src=" https://whitelabels.stickeebroadband.co.uk/js/loader.js"
+      <Script
+        src="https://whitelabels.stickeebroadband.co.uk/js/loader.js"
         async
-      ></script>
+      />
       <body className={`${inter.className}`}>
         <Header />
         {children}
