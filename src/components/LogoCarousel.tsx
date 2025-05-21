@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function LogoCarousel() {
-  const logos = [
-    { name: "Scottish Power", src: "/placeholder.svg?height=60&width=150" },
-    { name: "Octopus Energy", src: "/placeholder.svg?height=60&width=150" },
-    { name: "British Gas", src: "/placeholder.svg?height=60&width=150" },
-    { name: "EDF", src: "/placeholder.svg?height=60&width=150" },
-    { name: "OPL Energy", src: "/placeholder.svg?height=60&width=150" },
-    { name: "E.ON", src: "/placeholder.svg?height=60&width=150" },
-    { name: "Bulb", src: "/placeholder.svg?height=60&width=150" },
-  ];
+ const logos = [
+  { name: "Scottish Power", src: "/33.png" },
+  { name: "Octopus Energy", src: "/444.jpg" },
+  { name: "British Gas", src: "/22images.png" },
+  { name: "EDF", src: "/edf-2-logo-png-transparent.png" },
+  { name: "OPL Energy", src: "/555.jpg" },
+  { name: "E.ON", src: "/Energy Ombudsman Core Logo-RGB.png" },
+  { name: "Bulb", src: "/ICO logo.png" },
+];
 
   const [width, setWidth] = useState(0);
   const carousel = useRef<HTMLDivElement>(null);
@@ -51,36 +51,35 @@ export default function LogoCarousel() {
           },
         }}
       >
-        {logos.map((logo, index) => (
+         {logos.map((logo, index) => (
           <motion.div
             key={index}
-            className="min-w-[150px] h-[60px] flex items-center justify-center"
+            className="min-w-[240px] h-[250px] flex items-center justify-center "
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Image
               src={logo.src || "/placeholder.svg"}
               alt={logo.name}
-              width={150}
-              height={60}
-              className="object-contain"
+              width={180}
+              height={230}
+              className="object-contain	"
             />
           </motion.div>
         ))}
-
         {/* Duplicate logos for seamless looping */}
         {logos.map((logo, index) => (
           <motion.div
             key={`duplicate-${index}`}
-            className="min-w-[150px] h-[60px] flex items-center justify-center"
+            className="min-w-[240px] h-[250px] flex items-center justify-center "
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Image
               src={logo.src || "/placeholder.svg"}
               alt={logo.name}
-              width={150}
-              height={60}
+              width={180}
+              height={230}
               className="object-contain"
             />
           </motion.div>

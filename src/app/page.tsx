@@ -6,52 +6,53 @@ import ComparisonFlow from "@/components/ComparisonFlow";
 import InsuranceCategories from "@/components/InsuranceCategories";
 import ComparisonFeatures from "@/components/ComparisonFeatures";
 import FaqsList from "@/components/FaqsList";
+import TrustPilot from "@/components/TrustPilot";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen   text-white">
       <div className="w-full bg-[#0a1128]">
         <main className="container mx-auto max-w-6xl   px-4 py-12">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Check, Compare and Switch!
-              </h1>
-              <p className="text-2xl md:text-2xl font-medium text-emerald-400">
-                Benefit from exclusive discounts and special offers tailored to
-                maximise savings.
-              </p>
-              {/* <p className="text-lg text-gray-300 max-w-lg">
-              We compare multiple suppliers across the market, ensuring the best
-              value for your business.
-            </p> */}
+<div className="w-full bg-[#0a1128]">
+  <main className="container mx-auto max-w-6xl px-4 py-12">
+    <div className="flex flex-col md:flex-row gap-7 items-center">
 
-              <div className="grid sm:grid-cols-2 gap-4 mt-8">
-                <ServiceCard
-                  icon={<Zap className="h-8 w-8" />}
-                  title="Energy"
-                  description="Get the best electricity and gas prices"
-                />
-                <ServiceCard
-                  icon={<Wifi className="h-8 w-8" />}
-                  title="Broadband"
-                  description="Broadband packages to suit your needs"
-                />
-              </div>
-            </div>
+      {/* Left Side - Text Section */}
+      <div className="flex-1 space-y-6">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          Check, Compare and Switch!
+        </h1>
+        <p className="text-2xl font-medium text-emerald-400">
+          Benefit from exclusive discounts and special offers tailored to maximise savings.
+        </p>
 
-            <div className="hidden md:block relative">
-              <div className="absolute -top-20 -right-20 w-[500px] h-[500px] rounded-full overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=500&width=500"
-                  alt="Business owner"
-                  width={500}
-                  height={500}
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
+        <div className="grid sm:grid-cols-2 gap-4 mt-8">
+          <ServiceCard
+            icon={<Zap className="h-8 w-8" />}
+            title="Energy"
+            description="Get the best electricity and gas prices"
+          />
+          <ServiceCard
+            icon={<Wifi className="h-8 w-8" />}
+            title="Broadband"
+            description="Broadband packages to suit your needs"
+          />
+        </div>
+      </div>
+
+      {/* Right Side - Image */}
+      <div className="flex-1">
+        <img
+          src="\comparison-img.png"
+          alt="About us"
+          className="w-full h-auto object-cover rounded-lg"
+        />
+      </div>
+
+    </div>
+  </main>
+</div>
+
         </main>
       </div>
 
@@ -68,6 +69,7 @@ export default function HomePage() {
       <InsuranceCategories />
       <ComparisonFeatures />
       <FaqsList />
+      <TrustPilot />
     </div>
   );
 }
@@ -82,7 +84,7 @@ function ServiceCard({
   description: string;
 }) {
   return (
-    <div className="bg-[#0f1c3f] p-6 rounded-lg border border-gray-800 hover:border-emerald-500 transition-colors">
+    <div className="bg-[#0f1c3f] p-6 rounded-lg border border-gray-800 hover:border-emerald-300 transition-all duration-300 shadow-md hover:shadow-1xl transform hover:-translate-y-2 hover:scale-100 cursor-pointer">
       <div className="flex items-start gap-4">
         <div className="text-emerald-500">{icon}</div>
         <div className="space-y-2">

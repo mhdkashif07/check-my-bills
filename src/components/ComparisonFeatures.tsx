@@ -1,6 +1,7 @@
 import { ListChecks, Info, Star, Bell } from "lucide-react";
 import Image from "next/image";
 
+
 const features = [
   {
     icon: ListChecks,
@@ -37,16 +38,16 @@ export default function ComparisonFeatures() {
             src="/compare-info.jpg"
             alt="Customer Service"
             width={600}
-            height={500}
+            height={600}
             className="rounded-xl shadow-lg object-cover"
-          />
+          />  
         </div>
         <div className="w-full md:w-1/2 grid gap-6">
           {features.map(({ icon: Icon, title, desc, color }) => (
             <div key={title} className="flex items-start gap-4">
-              <Icon className={`h-7 w-7 ${color} mt-1`} />
-              <div>
-                <h3 className="font-semibold text-lg text-[#012348] mb-1">
+              <Icon className={`w-[81px] h-[81px] ${color} `} />
+              <div className="mt-4">
+                <h3 className="font-semibold text-lg text-[#012348] mb-1 ">
                   {title}
                 </h3>
                 <p className="text-gray-700 text-base leading-relaxed">
