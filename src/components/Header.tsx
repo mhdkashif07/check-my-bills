@@ -1,10 +1,25 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { MobileNav } from "./MobileNav";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 
+declare global {
+  interface Window {
+    stickeeWidgetLoader?: () => void;
+    stickeeBroadbandLoader?: () => void;
+  }
+}
+
 const Header = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.stickeeWidgetLoader) {
+      window.stickeeWidgetLoader();
+    }
+  }, []);
+
   return (
     <header className="w-full py-4 text-white bg-[#0a1128]">
       <div className=" mx-auto max-w-6xl px-4">
@@ -23,7 +38,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-6">
             <NavItem title="Home" />
             <NavItem title="Energy" />
-            <NavItem title="Broadband" />
+            <Link href="/broadband">Broadband</Link>
             <NavItem title="Mobile Phones" />
             <NavItem title="Insurance" />
             <NavItem title="Deals" />
@@ -39,6 +54,268 @@ const Header = () => {
 export default Header;
 
 function NavItem({ title }: { title: string }) {
+  // Custom dropdown for Deals
+  if (title === "Deals") {
+    return (
+      <div className="relative group">
+        <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-400 transition-colors py-2">
+          <span>{title}</span>
+          <ChevronDown className="h-4 w-4" />
+        </div>
+        <div className="absolute right-0 top-full w-[900px] invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 z-50">
+          <div className="pt-2">
+            <div className="bg-[#0f1c3f] text-white border border-gray-800 rounded-md shadow-lg overflow-hidden p-6 flex gap-12 min-w-max">
+              {/* MOBILE PHONES */}
+              <div>
+                <div className="font-bold mb-2">MOBILE PHONES</div>
+                <ul className="space-y-3 text-base">
+                  <li>
+                    <Link
+                      href="/deals/mobile/apple"
+                      className="hover:text-emerald-400"
+                    >
+                      Apple
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/mobile/google"
+                      className="hover:text-emerald-400"
+                    >
+                      Google
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/mobile/honor"
+                      className="hover:text-emerald-400"
+                    >
+                      Honor
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/mobile/motorola"
+                      className="hover:text-emerald-400"
+                    >
+                      Motorola
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/mobile/samsung"
+                      className="hover:text-emerald-400"
+                    >
+                      Samsung
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/mobile/nokia"
+                      className="hover:text-emerald-400"
+                    >
+                      Nokia
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/mobile/oneplus"
+                      className="hover:text-emerald-400"
+                    >
+                      OnePlus
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/mobile/oppo"
+                      className="hover:text-emerald-400"
+                    >
+                      OPPO
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/mobile/xiaomi"
+                      className="hover:text-emerald-400"
+                    >
+                      Xiaomi
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* BROADBAND */}
+              <div>
+                <div className="font-bold mb-2">BROADBAND</div>
+                <ul className="space-y-3 text-base">
+                  <li>
+                    <Link
+                      href="/deals/broadband/sky"
+                      className="hover:text-emerald-400"
+                    >
+                      Sky Deals
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/broadband/virgin-media"
+                      className="hover:text-emerald-400"
+                    >
+                      Virgin Media Deals
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/broadband/bt"
+                      className="hover:text-emerald-400"
+                    >
+                      BT Deals
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/broadband/plusnet"
+                      className="hover:text-emerald-400"
+                    >
+                      Plusnet Deals
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/broadband/talktalk"
+                      className="hover:text-emerald-400"
+                    >
+                      Talk Talk Deals
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/broadband/under-25"
+                      className="hover:text-emerald-400"
+                    >
+                      Deals under £25
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/broadband/under-30"
+                      className="hover:text-emerald-400"
+                    >
+                      Deals under £30
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/broadband/sky-tv"
+                      className="hover:text-emerald-400"
+                    >
+                      Sky TV Deals
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* BROADBAND TERM */}
+              <div>
+                <div className="font-bold mb-2">BROADBAND TERM</div>
+                <ul className="space-y-3 text-base">
+                  <li>
+                    <Link
+                      href="/deals/broadband/12-month"
+                      className="hover:text-emerald-400"
+                    >
+                      12 month contract
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/deals/broadband/24-month"
+                      className="hover:text-emerald-400"
+                    >
+                      24 month contract
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* ENERGY */}
+              <div>
+                <div className="font-bold mb-2">ENERGY</div>
+                <ul className="space-y-3 text-base">
+                  <li>
+                    <Link
+                      href="/energy/home"
+                      className="hover:text-emerald-400"
+                    >
+                      Home Energy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/energy/business"
+                      className="hover:text-emerald-400"
+                    >
+                      Business Energy
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* INSURANCE */}
+              <div>
+                <div className="font-bold mb-2">INSURANCE</div>
+                <ul className="space-y-3 text-base">
+                  <li>
+                    <Link
+                      href="/insurance/car"
+                      className="hover:text-emerald-400"
+                    >
+                      Car Insurance
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/insurance/home"
+                      className="hover:text-emerald-400"
+                    >
+                      Home Insurance
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/insurance/pet"
+                      className="hover:text-emerald-400"
+                    >
+                      Pet Insurance
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/insurance/van"
+                      className="hover:text-emerald-400"
+                    >
+                      Van Insurance
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/insurance/travel"
+                      className="hover:text-emerald-400"
+                    >
+                      Travel Insurance
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // if(title === "Broadband"){
+  //   return(
+  //     <Link></Link>
+  //   )
+  // }
+  // Default dropdown for other items
   return (
     <div className="relative group">
       <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-400 transition-colors py-2">
