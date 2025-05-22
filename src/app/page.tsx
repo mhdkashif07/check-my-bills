@@ -13,46 +13,46 @@ export default function HomePage() {
     <div className="min-h-screen   text-white">
       <div className="w-full bg-[#0a1128]">
         <main className="container mx-auto max-w-6xl   px-4 py-12">
-<div className="w-full bg-[#0a1128]">
-  <main className="container mx-auto max-w-6xl px-4 py-12">
-    <div className="flex flex-col md:flex-row gap-7 items-center">
+          <div className="w-full bg-[#0a1128]">
+            <main className="container mx-auto max-w-6xl px-4 py-12">
+              <div className="flex flex-col md:flex-row gap-7 items-center">
+                {/* Left Side - Text Section */}
+                <div className="flex-1 space-y-6">
+                  <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                    Check, Compare and Switch!
+                  </h1>
+                  <p className="text-2xl font-medium text-emerald-400">
+                    Benefit from exclusive discounts and special offers tailored
+                    to maximise savings.
+                  </p>
 
-      {/* Left Side - Text Section */}
-      <div className="flex-1 space-y-6">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          Check, Compare and Switch!
-        </h1>
-        <p className="text-2xl font-medium text-emerald-400">
-          Benefit from exclusive discounts and special offers tailored to maximise savings.
-        </p>
+                  <div className="grid sm:grid-cols-2 gap-4 mt-8">
+                    <ServiceCard
+                      icon={<Zap className="h-8 w-8" />}
+                      title="Energy"
+                      description="Get the best electricity and gas prices"
+                    />
+                    <ServiceCard
+                      icon={<Wifi className="h-8 w-8" />}
+                      title="Broadband"
+                      description="Broadband packages to suit your needs"
+                    />
+                  </div>
+                </div>
 
-        <div className="grid sm:grid-cols-2 gap-4 mt-8">
-          <ServiceCard
-            icon={<Zap className="h-8 w-8" />}
-            title="Energy"
-            description="Get the best electricity and gas prices"
-          />
-          <ServiceCard
-            icon={<Wifi className="h-8 w-8" />}
-            title="Broadband"
-            description="Broadband packages to suit your needs"
-          />
-        </div>
-      </div>
-
-      {/* Right Side - Image */}
-      <div className="flex-1">
-        <img
-          src="\comparison-img.png"
-          alt="About us"
-          className="w-full h-auto object-cover rounded-lg"
-        />
-      </div>
-
-    </div>
-  </main>
-</div>
-
+                {/* Right Side - Image */}
+                <div className="flex-1">
+                  <Image
+                    src="/comparison-img.png"
+                    alt="About us"
+                    className="w-full h-auto object-cover rounded-lg"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              </div>
+            </main>
+          </div>
         </main>
       </div>
 
@@ -63,6 +63,7 @@ export default function HomePage() {
             We compare trusted suppliers, so you&apos;re in good hands
           </h2>
           <LogoCarousel />
+          {/* <LogoCarousel1 /> */}
         </div>
       </div>
 

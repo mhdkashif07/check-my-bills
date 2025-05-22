@@ -3,22 +3,41 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const faqs = [
   {
     question: "1. What services does CheckMyBills offer?",
     answer: (
       <>
-        
-        <p className="mt-5"><a href="/" className="text-[#fe2d00]">CheckMyBills.co.uk</a>  provides a free, independent, and impartial comparison service to help you save on:</p>
+        <p className="mt-5">
+          <Link href="/" className="text-[#fe2d00]">
+            CheckMyBills.co.uk
+          </Link>{" "}
+          provides a free, independent, and impartial comparison service to help
+          you save on:
+        </p>
         <ul className="list-disc pt-3 pl-8 space-y-2">
-          <li><b>Energy:</b> Compare electricity and gas suppliers for the best rates.</li>
-          <li><b>Broadband:</b> Find affordable, high-speed internet deals.</li>
-          <li><b>Mobile Phones and SIM-only Plans:</b> Choose from top deals tailored to your needs.</li>
-          <li><b>Insurance Products:</b> Discover and compare deals for car insurance, home insurance, Pet insurance, and more – in partnership with trusted UK providers.</li>
-       </ul>
+          <li>
+            <b>Energy:</b> Compare electricity and gas suppliers for the best
+            rates.
+          </li>
+          <li>
+            <b>Broadband:</b> Find affordable, high-speed internet deals.
+          </li>
+          <li>
+            <b>Mobile Phones and SIM-only Plans:</b> Choose from top deals
+            tailored to your needs.
+          </li>
+          <li>
+            <b>Insurance Products:</b> Discover and compare deals for car
+            insurance, home insurance, Pet insurance, and more – in partnership
+            with trusted UK providers.
+          </li>
+        </ul>
         <p className="mt-4">
-          We make it easy to save time and money by finding deals that fit your lifestyle
+          We make it easy to save time and money by finding deals that fit your
+          lifestyle
         </p>
       </>
     ),
@@ -27,17 +46,21 @@ const faqs = [
     question: "2. How does the comparison process work?",
     answer: (
       <>
-        <p className="mt-5">
-          It’s quick and hassle-free!
-        </p>
-        
+        <p className="mt-5">It’s quick and hassle-free!</p>
+
         <ul className=" list-disc py-4 pl-8 space-y-2 font-semibold">
-          <li> Provide a few details, like your postcode or current provider.:</li>
+          <li>
+            {" "}
+            Provide a few details, like your postcode or current provider.:
+          </li>
           <li> View deals from top UK providers.:</li>
           <li> Switch or sign up online with our guidance.:</li>
         </ul>
 
-        <p>For insurance products, you’ll be directed to our <b> trusted affiliate</b> partners for final sign-up.</p>
+        <p>
+          For insurance products, you’ll be directed to our{" "}
+          <b> trusted affiliate</b> partners for final sign-up.
+        </p>
       </>
     ),
   },
@@ -46,7 +69,11 @@ const faqs = [
     answer: (
       <>
         <p className="mt-5">
-          We are <strong>independent</strong>  for utilities like energy, broadband, and mobile services. For <b>insurance products</b> , we partner with reliable UK-based <b>independent</b>  provider to bring you exclusive deals. These partnerships allow us to provide competitive offers while maintaining transparency.
+          We are <strong>independent</strong> for utilities like energy,
+          broadband, and mobile services. For <b>insurance products</b> , we
+          partner with reliable UK-based <b>independent</b> provider to bring
+          you exclusive deals. These partnerships allow us to provide
+          competitive offers while maintaining transparency.
         </p>
       </>
     ),
@@ -56,10 +83,8 @@ const faqs = [
     answer: (
       <>
         <p className="mt-5">
-          It’s <b> free to use!</b> Whether you’re comparing utilities or insurance products, there’s no charge for using our service.
-
-
-
+          It’s <b> free to use!</b> Whether you’re comparing utilities or
+          insurance products, there’s no charge for using our service.
         </p>
       </>
     ),
@@ -69,7 +94,9 @@ const faqs = [
     answer: (
       <>
         <p className="mt-5">
-          We source deals directly from providers and update them regularly. For insurance comparisons, we work with <b> trusted partners</b> to ensure you get the most accurate and competitive quotes.
+          We source deals directly from providers and update them regularly. For
+          insurance comparisons, we work with <b> trusted partners</b> to ensure
+          you get the most accurate and competitive quotes.
         </p>
       </>
     ),

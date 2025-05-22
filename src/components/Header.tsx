@@ -39,7 +39,7 @@ const Header = () => {
             <NavItem title="Home" />
             <NavItem title="Energy" />
             <Link href="/broadband">Broadband</Link>
-            <NavItem title="Mobile Phones" />
+            <Link href="/mobile-phones">Broadband</Link>
             <NavItem title="Insurance" />
             <NavItem title="Deals" />
           </div>
@@ -310,12 +310,36 @@ function NavItem({ title }: { title: string }) {
     );
   }
 
-  // if(title === "Broadband"){
-  //   return(
-  //     <Link></Link>
-  //   )
-  // }
-  // Default dropdown for other items
+  if (title === "Energy") {
+    return (
+      <div className="relative group">
+        <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-400 transition-colors py-2">
+          <span>{title}</span>
+          <ChevronDown className="h-4 w-4" />
+        </div>
+        <div className="absolute -right-4 top-full w-48 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 z-50">
+          <div className="pt-2">
+            <div className="bg-[#0f1c3f] text-white border border-gray-800 rounded-md shadow-lg overflow-hidden">
+              <div className="py-1">
+                <Link
+                  href="#"
+                  className="block px-4 py-2 hover:bg-[#182952] cursor-pointer"
+                >
+                  Home Energy
+                </Link>
+                <Link
+                  href="#"
+                  className="block px-4 py-2 hover:bg-[#182952] cursor-pointer"
+                >
+                  Business Energy
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="relative group">
       <div className="flex items-center gap-1 cursor-pointer hover:text-emerald-400 transition-colors py-2">
