@@ -1,5 +1,7 @@
 // "use client";
 
+import StickeeWidget from "./CSR";
+
 // import React, { useEffect } from "react";
 // import { usePathname } from "next/navigation";
 
@@ -68,7 +70,7 @@ const BroadBandPage = () => {
         //   height: "480px",
         // }}
       ></div>
-      <div data-stickee-widget-id="checkmybills-503">Loading...</div>
+      <StickeeWidget />
     </>
   );
 };

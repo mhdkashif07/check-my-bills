@@ -39,7 +39,7 @@ const Header = () => {
             <NavItem title="Home" />
             <NavItem title="Energy" />
             <Link href="/broadband">Broadband</Link>
-            <Link href="/mobile-phones">Broadband</Link>
+            <Link href="/mobile-phones">Mobile Phones</Link>
             <NavItem title="Insurance" />
             <NavItem title="Deals" />
           </div>
