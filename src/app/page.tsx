@@ -2,11 +2,13 @@ import type React from "react";
 import Image from "next/image";
 import { Zap, Wifi } from "lucide-react";
 import LogoCarousel from "@/components/LogoCarousel";
+import LogoCarousel1 from "@/components/LogoCarousel1";
 import ComparisonFlow from "@/components/ComparisonFlow";
 import InsuranceCategories from "@/components/InsuranceCategories";
 import ComparisonFeatures from "@/components/ComparisonFeatures";
 import FaqsList from "@/components/FaqsList";
 import TrustPilot from "@/components/TrustPilot";
+import TrustPilot1 from "@/components/TrustPilot1";
 
 export default function HomePage() {
   return (
@@ -56,20 +58,35 @@ export default function HomePage() {
         </main>
       </div>
 
-      <div className="bg-white py-8 mx-auto max-w-6xl">
+      <div className="bg-white py-10  mx-auto max-w-6xl">
         <ComparisonFlow />
+
         <div className="mt-16 bg-[#f5f0ff] py-12 px-4 rounded-lg">
           <h2 className="text-center text-2xl font-semibold text-[#2d1a45] mb-10">
             We compare trusted suppliers, so you&apos;re in good hands
           </h2>
           <LogoCarousel />
+          
         </div>
+
+
+        {/* Duplicate carosul */}
+        {/* <div className="mt-16 bg-[#f5f0ff] py-12 px-4 rounded-lg">
+          <h2 className="text-center text-2xl font-semibold text-[#2d1a45] mb-10">
+            We compare trusted suppliers, so you&apos;re in good hands
+          </h2>
+          <LogoCarousel1 />
+          
+        </div> */}
+
+        
       </div>
 
       <InsuranceCategories />
       <ComparisonFeatures />
       <FaqsList />
-      <TrustPilot />
+      {/* <TrustPilot /> */}
+      <TrustPilot1 />
     </div>
   );
 }
