@@ -10,7 +10,7 @@ import {
   PoundSterlingIcon as Pound,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import LogoCarousel from "@/components/LogoCarousel";
+// import LogoCarousel from "@/components/LogoCarousel";
 
 export default function ComparisonFlow() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
