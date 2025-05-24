@@ -10,6 +10,7 @@ import {
   PoundSterlingIcon as Pound,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import LogoCarousel from "@/components/LogoCarousel";
 
 export default function ComparisonFlow() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -92,7 +93,7 @@ export default function ComparisonFlow() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-2 max-w-5xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-2 max-w-5xl mx-auto px-8 md:px-8 sm:px-4">
       {cards.map((card, index) => (
         <div key={index} className="flex flex-col md:flex-row items-center">
           <motion.div
@@ -149,6 +150,13 @@ export default function ComparisonFlow() {
           )}
         </div>
       ))}
+
+      {/* <div className="mt-16 bg-[#4400cd] py-12 px-4 rounded-lg">
+        <h2 className="text-center text-2xl font-semibold text-[#2d1a45] mb-10">
+          We compare trusted suppliers, so you&apos;re in good hands
+        </h2>
+        <LogoCarousel />
+      </div> */}
     </div>
   );
 }
