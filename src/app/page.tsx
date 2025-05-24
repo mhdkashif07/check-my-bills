@@ -7,6 +7,7 @@ import InsuranceCategories from "@/components/InsuranceCategories";
 import ComparisonFeatures from "@/components/ComparisonFeatures";
 import FaqsList from "@/components/FaqsList";
 import TrustPilot from "@/components/TrustPilot";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -27,16 +28,24 @@ export default function HomePage() {
                   </p>
 
                   <div className="grid sm:grid-cols-2 gap-4 mt-8">
-                    <ServiceCard
-                      icon={<Zap className="h-8 w-8" />}
-                      title="Energy"
-                      description="Get the best electricity and gas prices"
-                    />
-                    <ServiceCard
-                      icon={<Wifi className="h-8 w-8" />}
-                      title="Broadband"
-                      description="Broadband packages to suit your needs"
-                    />
+                    <Link
+                      href="https://domestic.checkmybills.tickd.co.uk/"
+                      target="_blank"
+                      className="hover:text-emerald-400"
+                    >
+                      <ServiceCard
+                        icon={<Zap className="h-8 w-8" />}
+                        title="Energy"
+                        description="Get the best electricity and gas prices"
+                      />
+                    </Link>
+                    <Link href="/broadband" className="hover:text-emerald-400">
+                      <ServiceCard
+                        icon={<Wifi className="h-8 w-8" />}
+                        title="Broadband"
+                        description="Broadband packages to suit your needs"
+                      />
+                    </Link>
                   </div>
                 </div>
 

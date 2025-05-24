@@ -1,10 +1,11 @@
 import MobilePhonePage from "@/components/MobilePhonePage";
 
-export default function ApplePhones() {
+export default function SamsungPhones() {
   return (
     <MobilePhonePage
-      title="Apple Phone Deals"
+      title="Samsung Phone Deals"
       widgetId="check-my-bills-mobile-504"
+      filters='{"brands":[5]}'
     />
   );
 }

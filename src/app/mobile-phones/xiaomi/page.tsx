@@ -1,10 +1,11 @@
 import MobilePhonePage from "@/components/MobilePhonePage";
 
-export default function ApplePhones() {
+export default function XiaomiPhones() {
   return (
     <MobilePhonePage
-      title="Apple Phone Deals"
+      title="Xiaomi Phone Deals"
       widgetId="check-my-bills-mobile-504"
+      filters='{"brands":[78]}'
     />
   );
 }

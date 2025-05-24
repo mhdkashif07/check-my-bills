@@ -3,7 +3,7 @@
 import React from "react";
 import { useStickeeWidget } from "@/hooks/useStickeeWidget";
 
-const BroadBandPage = () => {
+const TwentyFourMonthContractPage = () => {
   useStickeeWidget();
 
   return (
@@ -18,11 +18,16 @@ const BroadBandPage = () => {
       ></div>
 
       <main className="p-6">
-        <h1 className="text-xl font-semibold mb-4">Check My Bills</h1>
-        <div data-stickee-widget-id="checkmybills-503">Loading...</div>
+        <h1 className="text-xl font-semibold mb-4">24 Month Contract Deals</h1>
+        <div
+          data-stickee-widget-id="checkmybills-503"
+          data-filters='{"contract_lengths": [24]}'
+        >
+          Loading...
+        </div>
       </main>
     </>
   );
 };
 
-export default BroadBandPage;
+export default TwentyFourMonthContractPage;

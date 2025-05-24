@@ -36,7 +36,7 @@ const Header = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-6">
-            <NavItem title="Home" />
+            <Link href="/">Home</Link>
             <NavItem title="Energy" />
             <Link href="/broadband">Broadband</Link>
             <Link href="/mobile-phones">Mobile Phones</Link>
@@ -62,7 +62,7 @@ function NavItem({ title }: { title: string }) {
           <span>{title}</span>
           <ChevronDown className="h-4 w-4" />
         </div>
-        <div className="absolute right-0 top-full w-[900px] invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 z-50">
+        <div className="absolute right-0 top-full w-[700px] invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 z-50">
           <div className="pt-2">
             <div className="bg-[#0f1c3f] text-white border border-gray-800 rounded-md shadow-lg overflow-hidden p-6 flex gap-12 min-w-max">
               {/* MOBILE PHONES */}
@@ -71,7 +71,7 @@ function NavItem({ title }: { title: string }) {
                 <ul className="space-y-3 text-base">
                   <li>
                     <Link
-                      href="/deals/mobile/apple"
+                      href="/mobile-phones/apple"
                       className="hover:text-emerald-400"
                     >
                       Apple
@@ -79,7 +79,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/mobile/google"
+                      href="/mobile-phones/google"
                       className="hover:text-emerald-400"
                     >
                       Google
@@ -87,7 +87,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/mobile/honor"
+                      href="/mobile-phones/honor"
                       className="hover:text-emerald-400"
                     >
                       Honor
@@ -95,7 +95,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/mobile/motorola"
+                      href="/mobile-phones/motorola"
                       className="hover:text-emerald-400"
                     >
                       Motorola
@@ -103,7 +103,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/mobile/samsung"
+                      href="/mobile-phones/samsung"
                       className="hover:text-emerald-400"
                     >
                       Samsung
@@ -111,7 +111,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/mobile/nokia"
+                      href="/mobile-phones/nokia"
                       className="hover:text-emerald-400"
                     >
                       Nokia
@@ -119,7 +119,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/mobile/oneplus"
+                      href="/mobile-phones/oneplus"
                       className="hover:text-emerald-400"
                     >
                       OnePlus
@@ -127,7 +127,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/mobile/oppo"
+                      href="/mobile-phones/oppo"
                       className="hover:text-emerald-400"
                     >
                       OPPO
@@ -135,7 +135,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/mobile/xiaomi"
+                      href="/mobile-phones/xiaomi"
                       className="hover:text-emerald-400"
                     >
                       Xiaomi
@@ -149,7 +149,7 @@ function NavItem({ title }: { title: string }) {
                 <ul className="space-y-3 text-base">
                   <li>
                     <Link
-                      href="/deals/broadband/sky"
+                      href="/broadband/sky"
                       className="hover:text-emerald-400"
                     >
                       Sky Deals
@@ -157,7 +157,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/broadband/virgin-media"
+                      href="/broadband/virgin-media"
                       className="hover:text-emerald-400"
                     >
                       Virgin Media Deals
@@ -165,7 +165,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/broadband/bt"
+                      href="/broadband/bt"
                       className="hover:text-emerald-400"
                     >
                       BT Deals
@@ -173,7 +173,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/broadband/plusnet"
+                      href="/broadband/plusnet"
                       className="hover:text-emerald-400"
                     >
                       Plusnet Deals
@@ -181,7 +181,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/broadband/talktalk"
+                      href="/broadband/talktalk"
                       className="hover:text-emerald-400"
                     >
                       Talk Talk Deals
@@ -189,7 +189,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/broadband/under-25"
+                      href="/broadband/under-25"
                       className="hover:text-emerald-400"
                     >
                       Deals under £25
@@ -197,7 +197,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/broadband/under-30"
+                      href="/broadband/under-30"
                       className="hover:text-emerald-400"
                     >
                       Deals under £30
@@ -205,7 +205,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/broadband/sky-tv"
+                      href="/broadband/sky-tv"
                       className="hover:text-emerald-400"
                     >
                       Sky TV Deals
@@ -219,7 +219,7 @@ function NavItem({ title }: { title: string }) {
                 <ul className="space-y-3 text-base">
                   <li>
                     <Link
-                      href="/deals/broadband/12-month"
+                      href="/broadband/type/12-month-contract"
                       className="hover:text-emerald-400"
                     >
                       12 month contract
@@ -227,7 +227,7 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/deals/broadband/24-month"
+                      href="/broadband/type/24-month-contract"
                       className="hover:text-emerald-400"
                     >
                       24 month contract
@@ -241,7 +241,8 @@ function NavItem({ title }: { title: string }) {
                 <ul className="space-y-3 text-base">
                   <li>
                     <Link
-                      href="/energy/home"
+                      href="https://domestic.checkmybills.tickd.co.uk/"
+                      target="_blank"
                       className="hover:text-emerald-400"
                     >
                       Home Energy
@@ -249,7 +250,8 @@ function NavItem({ title }: { title: string }) {
                   </li>
                   <li>
                     <Link
-                      href="/energy/business"
+                      href="https://checkmybills.tickd.co.uk"
+                      target="_blank"
                       className="hover:text-emerald-400"
                     >
                       Business Energy
@@ -258,7 +260,7 @@ function NavItem({ title }: { title: string }) {
                 </ul>
               </div>
               {/* INSURANCE */}
-              <div>
+              {/* <div>
                 <div className="font-bold mb-2">INSURANCE</div>
                 <ul className="space-y-3 text-base">
                   <li>
@@ -302,7 +304,7 @@ function NavItem({ title }: { title: string }) {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -322,13 +324,15 @@ function NavItem({ title }: { title: string }) {
             <div className="bg-[#0f1c3f] text-white border border-gray-800 rounded-md shadow-lg overflow-hidden">
               <div className="py-1">
                 <Link
-                  href="#"
+                  href="https://domestic.checkmybills.tickd.co.uk/"
+                  target="_blank"
                   className="block px-4 py-2 hover:bg-[#182952] cursor-pointer"
                 >
                   Home Energy
                 </Link>
                 <Link
-                  href="#"
+                  href="https://checkmybills.tickd.co.uk"
+                  target="_blank"
                   className="block px-4 py-2 hover:bg-[#182952] cursor-pointer"
                 >
                   Business Energy
@@ -350,30 +354,46 @@ function NavItem({ title }: { title: string }) {
         <div className="pt-2">
           <div className="bg-[#0f1c3f] text-white border border-gray-800 rounded-md shadow-lg overflow-hidden">
             <div className="py-1">
-              <Link
-                href="#"
-                className="block px-4 py-2 hover:bg-[#182952] cursor-pointer"
+              <a
+                href="https://www.quotezone.co.uk/SetAffiliate.php?aid=B2S9J9-001&type=car"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-2 hover:bg-[#182952]"
               >
-                For Business
-              </Link>
-              <Link
-                href="#"
-                className="block px-4 py-2 hover:bg-[#182952] cursor-pointer"
+                Car Insurance
+              </a>
+              <a
+                href="https://www.quotezone.co.uk/SetAffiliate.php?aid=B2S9J9-004&type=home"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-2 hover:bg-[#182952]"
               >
-                For Home
-              </Link>
-              <Link
-                href="#"
-                className="block px-4 py-2 hover:bg-[#182952] cursor-pointer"
+                Home Insurance
+              </a>
+              <a
+                href="https://www.quotezone.co.uk/SetAffiliate.php?aid=B2S9J9-009&type=pet"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-2 hover:bg-[#182952]"
               >
-                Compare Deals
-              </Link>
-              <Link
-                href="#"
-                className="block px-4 py-2 hover:bg-[#182952] cursor-pointer"
+                Pet Insurance
+              </a>
+              <a
+                href="https://www.quotezone.co.uk/SetAffiliate.php?aid=B2S9J9-002&type=van"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-2 hover:bg-[#182952]"
               >
-                Guides & Resources
-              </Link>
+                Van Insurance
+              </a>
+              <a
+                href="https://www.quotezone.co.uk/SetAffiliate.php?aid=B2S9J9-006&type=travel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-2 hover:bg-[#182952]"
+              >
+                Travel Insurance
+              </a>
             </div>
           </div>
         </div>

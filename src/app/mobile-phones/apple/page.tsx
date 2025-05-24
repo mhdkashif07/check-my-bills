@@ -5,6 +5,7 @@ export default function ApplePhones() {
     <MobilePhonePage
       title="Apple Phone Deals"
       widgetId="check-my-bills-mobile-504"
+      filters='{"brands":[19]}'
     />
   );
 }
