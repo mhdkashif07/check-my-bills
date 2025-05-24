@@ -165,7 +165,7 @@ const Footer = () => {
                   </svg>
                 </Link>
               </div>
-              <div className="flex pt-3">
+              <div className="flex justify-center pt-3 w-full">
                 <Image
                   src="/download-ICO-logo.png"
                   width={100}
