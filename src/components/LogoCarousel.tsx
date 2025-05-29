@@ -11,8 +11,8 @@ export default function LogoCarousel() {
     { name: "British Gas", src: "/22images.png" },
     { name: "EDF", src: "/edf-2-logo-png-transparent.png" },
     { name: "OPL Energy", src: "/555.png" },
-    { name: "E.ON", src: "/Energy Ombudsman Core Logo-RGB.png" },
-    { name: "Bulb", src: "/ICO logo.png" },
+    // { name: "E.ON", src: "/Energy Ombudsman Core Logo-RGB.png" },
+    // { name: "Bulb", src: "/ICO logo.png" },
     { name: "Bulb", src: "/66.png" },
   ];
 

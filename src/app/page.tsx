@@ -1,6 +1,6 @@
 import type React from "react";
 import Image from "next/image";
-import { Zap, Wifi } from "lucide-react";
+import { Zap, Wifi, Smartphone, PhoneCall } from "lucide-react";
 import LogoCarousel from "@/components/LogoCarousel";
 // import LogoCarousel1 from "@/components/LogoCarousel1";
 import ComparisonFlow from "@/components/ComparisonFlow";
@@ -15,37 +15,51 @@ export default function HomePage() {
   return (
     <div className="min-h-screen   text-white">
       <div className="w-full bg-[#0a1128]">
-        <main className="container mx-auto max-w-6xl   px-4 py-12">
+        <main className="container mx-auto max-w-7xl   px-4 pt-23 pb-10">
           <div className="w-full bg-[#0a1128]">
-            <main className="container mx-auto max-w-6xl px-4 py-12">
+            <main className="container mx-auto max-w-6xl px-8 py-6">
               <div className="flex flex-col md:flex-row gap-7 items-center">
                 {/* Left Side - Text Section */}
-                <div className="flex-1 space-y-6">
-                  <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                <div className="flex-1 space-y-3">
+                  <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                     Check, Compare and Switch!
                   </h1>
-                  <p className="text-2xl font-medium text-emerald-400">
+                  <p className="text-[18px] font-medium text-emerald-400">
                     Benefit from exclusive discounts and special offers tailored
                     to maximise savings.
                   </p>
 
-                  <div className="grid sm:grid-cols-2 gap-4 mt-8">
+                  <div className="grid sm:grid-cols-2 gap-5">
                     <Link
                       href="https://domestic.checkmybills.tickd.co.uk/"
                       target="_blank"
-                      className="hover:text-emerald-400"
+                      
                     >
                       <ServiceCard
-                        icon={<Zap className="h-8 w-8" />}
+                        icon={<Zap />}
                         title="Energy"
                         description="Get the best electricity and gas prices"
                       />
                     </Link>
-                    <Link href="/broadband" className="hover:text-emerald-400">
+                    <Link href="/broadband" >
                       <ServiceCard
-                        icon={<Wifi className="h-8 w-8" />}
+                        icon={<PhoneCall  />}
+                        title="Sim Only Deals"
+                        description="Affordable SIM-only plans to keep you connected."
+                      />
+                    </Link>
+                    <Link href="/broadband">
+                      <ServiceCard
+                        icon={<Wifi />}
                         title="Broadband"
                         description="Broadband packages to suit your needs"
+                      />
+                    </Link>
+                    <Link href="/broadband">
+                      <ServiceCard
+                        icon={<Smartphone  />}
+                        title="Mobile Phones"
+                        description="Explore our latest mobile  deals and plans."
                       />
                     </Link>
                   </div>
@@ -57,8 +71,8 @@ export default function HomePage() {
                     src="/comparison-img.png"
                     alt="About us"
                     className="w-full h-auto object-cover rounded-lg"
-                    width={500}
-                    height={500}
+                    width={700}
+                    height={700}
                   />
                 </div>
               </div>
@@ -91,7 +105,7 @@ export default function HomePage() {
       <InsuranceCategories />
       <ComparisonFeatures />
       <FaqsList />
-      {/* <TrustPilot /> */}
+      {/* <TrustPiloT /> */}
       <TrustPilot1 />
     </div>
   );
@@ -107,11 +121,11 @@ function ServiceCard({
   description: string;
 }) {
   return (
-    <div className="bg-[#0f1c3f] p-6 rounded-lg border border-gray-800 hover:border-emerald-300 transition-all duration-300 shadow-md hover:shadow-1xl transform hover:-translate-y-2 hover:scale-100 cursor-pointer">
-      <div className="flex items-start gap-4">
-        <div className="text-emerald-500">{icon}</div>
-        <div className="space-y-2">
-          <h3 className="text-xl font-semibold">{title}</h3>
+    <div className="bg-[#0f1c3f] p-2 rounded-lg border border-gray-800 hover:border-emerald-300 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1 hover:scale-98 cursor-pointer">
+      <div className="flex items-start gap-2">
+        <div className="text-emerald-500 h-7 w-7">{icon}</div>
+        <div className="">
+          <h3 className=" font-semibold hover:text-emerald-400">{title}</h3>
           <p className="text-gray-300 text-sm">{description}</p>
         </div>
       </div>

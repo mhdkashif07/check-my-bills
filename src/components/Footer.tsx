@@ -25,8 +25,8 @@ const Footer = () => {
               <p className="text-[14px] mt-5">Email: info@checkmybills.co.uk</p>
               <div className="text-base">
                 <p className="">
-                  <span className="font-semibold">Checkmybills.co.uk</span>
-                  is registered trademark of Platform 101 L company No. 15681880
+                  <span className="font-semibold">Checkmybills.co.uk </span>
+                  {" "}is registered trademark of Platform 101 L company No. 15681880
                   Registe address 27 Old Gloucester Stre London, WC1N 3
                   Checkmybills.co.uk is trading st of Platform 101 Ltd. © 2025
                   Rights Reserved.
@@ -114,19 +114,7 @@ const Footer = () => {
             {/* Subscribe Section */}
             <div className="space-y-4">
               <h3 className="text-[24px] mb-6">Subscribe</h3>
-              <div className="relative w-full">
-                <input
-                  type="email"
-                  placeholder="Keep in touch"
-                  className="bg-[#072125] text-white px-3 py-3 w-full  
-              
-               focus:border-yellow-500 focus:ring-2 focus:ring-white focus:rounded-sm 
-               pr-16   " // pr-12 gives space for the button
-                />
-                <button className="absolute top-0 right-0 h-full px-4 bg-white">
-                  <ArrowRight className="h-6 w-full text-[#fe2d00]" />
-                </button>
-              </div>
+             
               <p className="mt-4">Our expertise always ready to assist you.</p>
               <div className="flex gap-4 mt-4">
                 <Link
@@ -167,15 +155,15 @@ const Footer = () => {
               </div>
               <div className="flex justify-center pt-3 w-full">
                 <Image
-                  src="/download-ICO-logo.png"
-                  width={100}
-                  height={100}
-                  alt=""
-                />
-                <Image
                   src="/Energy Ombudsman Core Logo-RGB.png"
                   width={200}
                   height={200}
+                  alt=""
+                />
+                <Image
+                  src="/download-ICO-logo.png"
+                  width={100}
+                  height={100}
                   alt=""
                 />
               </div>

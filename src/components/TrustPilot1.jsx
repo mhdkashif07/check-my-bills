@@ -26,7 +26,7 @@ const Trustpilot1 = () => {
         <p className="text-sm text-gray-900">
           Based on{" "}
           <Link href="https://www.trustpilot.com/review/checkmybills.co.uk" className="underline">
-            110 reviews
+           Client reviews
           </Link>
         </p>
 

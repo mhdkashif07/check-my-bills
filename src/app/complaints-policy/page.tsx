@@ -98,16 +98,7 @@ export default function ComplaintsPolicy() {
             </ul>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-xl mb-4">Complaint Reference Format</h2>
-            <p className="mb-4">
-              When contacting us about a complaint, please use the following
-              format for the subject line:
-            </p>
-            <p className="mb-4 font-semibold">
-              Subject: Complaint Reference Number: [XXXXX]
-            </p>
-          </section>
+          
 
           <section className="mb-8">
             <h2 className="text-xl mb-4">Contact Us</h2>
