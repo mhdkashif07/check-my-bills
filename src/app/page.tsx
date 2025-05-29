@@ -14,8 +14,8 @@ import TrustPilot1 from "@/components/TrustPilot1";
 export default function HomePage() {
   return (
     <div className="min-h-screen   text-white">
-      <div className="w-full bg-[#0a1128]">
-        <main className="container mx-auto max-w-7xl   px-4 pt-23 pb-10">
+      <div className="w-full h-lvh bg-[#0a1128]">
+        <main className="container mx-auto max-w-7xl   px-4 pt-10 pb-10">
           <div className="w-full bg-[#0a1128]">
             <main className="container mx-auto max-w-6xl px-8 py-6">
               <div className="flex flex-col md:flex-row gap-7 items-center">
@@ -33,7 +33,6 @@ export default function HomePage() {
                     <Link
                       href="https://domestic.checkmybills.tickd.co.uk/"
                       target="_blank"
-                      
                     >
                       <ServiceCard
                         icon={<Zap />}
@@ -41,9 +40,9 @@ export default function HomePage() {
                         description="Get the best electricity and gas prices"
                       />
                     </Link>
-                    <Link href="/broadband" >
+                    <Link href="/sim-only-deals">
                       <ServiceCard
-                        icon={<PhoneCall  />}
+                        icon={<PhoneCall />}
                         title="Sim Only Deals"
                         description="Affordable SIM-only plans to keep you connected."
                       />
@@ -55,9 +54,9 @@ export default function HomePage() {
                         description="Broadband packages to suit your needs"
                       />
                     </Link>
-                    <Link href="/broadband">
+                    <Link href="/mobile-phones">
                       <ServiceCard
-                        icon={<Smartphone  />}
+                        icon={<Smartphone />}
                         title="Mobile Phones"
                         description="Explore our latest mobile  deals and plans."
                       />
@@ -68,7 +67,7 @@ export default function HomePage() {
                 {/* Right Side - Image */}
                 <div className="flex-1">
                   <Image
-                    src="/comparison-img.png"
+                    src="/hero-img.svg"
                     alt="About us"
                     className="w-full h-auto object-cover rounded-lg"
                     width={700}
@@ -121,11 +120,13 @@ function ServiceCard({
   description: string;
 }) {
   return (
-    <div className="bg-[#0f1c3f] p-2 rounded-lg border border-gray-800 hover:border-emerald-300 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1 hover:scale-98 cursor-pointer">
+    <div className="bg-[#0f1c3f] p-4 rounded-lg border border-gray-800 hover:border-emerald-300 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1 hover:scale-98 cursor-pointer">
       <div className="flex items-start gap-2">
-        <div className="text-emerald-500 h-7 w-7">{icon}</div>
+        <div className="text-emerald-500 h-10 w-10">{icon}</div>
         <div className="">
-          <h3 className=" font-semibold hover:text-emerald-400">{title}</h3>
+          <h3 className=" font-semibold text-lg mb-1 hover:text-emerald-400">
+            {title}
+          </h3>
           <p className="text-gray-300 text-sm">{description}</p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Facebook, Instagram, ArrowRight } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -25,8 +25,8 @@ const Footer = () => {
               <p className="text-[14px] mt-5">Email: info@checkmybills.co.uk</p>
               <div className="text-base">
                 <p className="">
-                  <span className="font-semibold">Checkmybills.co.uk </span>
-                  {" "}is registered trademark of Platform 101 L company No. 15681880
+                  <span className="font-semibold">Checkmybills.co.uk </span> is
+                  registered trademark of Platform 101 L company No. 15681880
                   Registe address 27 Old Gloucester Stre London, WC1N 3
                   Checkmybills.co.uk is trading st of Platform 101 Ltd. © 2025
                   Rights Reserved.
@@ -84,27 +84,42 @@ const Footer = () => {
               <h3 className="text-[24px] mb-7">Popular Phones</h3>
               <ul className="space-y-5 text-base mb-2">
                 <li>
-                  <Link href="/phones/apple" className="hover:text-gray-300">
+                  <Link
+                    href="/mobile-phones/apple"
+                    className="hover:text-gray-300"
+                  >
                     Apple
                   </Link>
                 </li>
                 <li>
-                  <Link href="/phones/google" className="hover:text-gray-300">
+                  <Link
+                    href="/mobile-phones/google"
+                    className="hover:text-gray-300"
+                  >
                     Google
                   </Link>
                 </li>
                 <li>
-                  <Link href="/phones/honor" className="hover:text-gray-300">
+                  <Link
+                    href="/mobile-phones/honor"
+                    className="hover:text-gray-300"
+                  >
                     Honor
                   </Link>
                 </li>
                 <li>
-                  <Link href="/phones/motorola" className="hover:text-gray-300">
+                  <Link
+                    href="/mobile-phones/motorola"
+                    className="hover:text-gray-300"
+                  >
                     Motorola
                   </Link>
                 </li>
                 <li>
-                  <Link href="/phones/samsung" className="hover:text-gray-300">
+                  <Link
+                    href="/mobile-phones/samsung"
+                    className="hover:text-gray-300"
+                  >
                     Samsung
                   </Link>
                 </li>
@@ -114,7 +129,7 @@ const Footer = () => {
             {/* Subscribe Section */}
             <div className="space-y-4">
               <h3 className="text-[24px] mb-6">Subscribe</h3>
-             
+
               <p className="mt-4">Our expertise always ready to assist you.</p>
               <div className="flex gap-4 mt-4">
                 <Link
