@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Loader from "@/components/Loader";
 
 const MobilePage = () => {
   useEffect(() => {
@@ -27,8 +28,11 @@ const MobilePage = () => {
 
   return (
     <main className="max-w-6xl mx-auto py-8 px-4">
-      <h1 className="text-3xl font-bold mb-6">Mobile Deals</h1>
-      <div data-stickee-widget-id="checkmybills-504">Loading...</div>
+      <div data-stickee-widget-id="checkmybills-504">
+        <div className="animate-fade-in">
+          <Loader />
+        </div>
+      </div>
     </main>
   );
 };

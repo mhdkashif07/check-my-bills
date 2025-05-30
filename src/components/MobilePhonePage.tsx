@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useStickeeWidget } from "@/hooks/useStickeeWidget";
+import Loader from "@/components/Loader";
 
 interface MobilePhonePageProps {
   title: string;
@@ -9,11 +10,7 @@ interface MobilePhonePageProps {
   filters?: string;
 }
 
-const MobilePhonePage = ({
-  title,
-  widgetId,
-  filters,
-}: MobilePhonePageProps) => {
+const MobilePhonePage = ({ widgetId, filters }: MobilePhonePageProps) => {
   useStickeeWidget();
 
   return (
@@ -32,12 +29,13 @@ const MobilePhonePage = ({
         }}
       ></div>
       <main className="p-6">
-        <h1 className="text-xl font-semibold mb-4">{title}</h1>
         <div
           data-stickee-widget-id={widgetId}
           {...(filters ? { "data-filters": filters } : {})}
         >
-          Loading...
+          <div className="animate-fade-in">
+            <Loader />
+          </div>
         </div>
       </main>
     </>

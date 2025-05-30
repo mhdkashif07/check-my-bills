@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useStickeeWidget } from "@/hooks/useStickeeWidget";
+import Loader from "@/components/Loader";
 
 const TwelveMonthContractPage = () => {
   useStickeeWidget();
@@ -18,12 +19,13 @@ const TwelveMonthContractPage = () => {
       ></div>
 
       <main className="p-6">
-        <h1 className="text-xl font-semibold mb-4">12 Month Contract Deals</h1>
         <div
           data-stickee-widget-id="checkmybills-503"
           data-filters='{"contract_lengths": [12]}'
         >
-          Loading...
+          <div className="animate-fade-in">
+            <Loader />
+          </div>
         </div>
       </main>
     </>
