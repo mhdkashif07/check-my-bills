@@ -38,6 +38,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-6">
             <Link href="/">Home</Link>
             <NavItem title="Energy" />
+            <Link href="/guides">Guides</Link>
             <Link href="/broadband">Broadband</Link>
             <Link href="/mobile-phones">Mobile Phones</Link>
             <NavItem title="Insurance" />
