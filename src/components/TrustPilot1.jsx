@@ -25,17 +25,14 @@ const Trustpilot1 = () => {
             />
           </div> */}
           <div className="mt-2 mb-2 flex justify-center md:px-8">
-  <Image
-    src="/stars-4.5.svg"
-    alt="4.5 stars"
-    className="w-24 sm:w-32 md:w-40 h-auto"
-    width={170}
-    height={32}
-  />
-</div>
-
-
-
+            <Image
+              src="/stars-4.5.svg"
+              alt="4.5 stars"
+              className="w-24 sm:w-32 md:w-40 h-auto"
+              width={170}
+              height={32}
+            />
+          </div>
 
           <p className="text-sm text-gray-900">
             Based on{" "}

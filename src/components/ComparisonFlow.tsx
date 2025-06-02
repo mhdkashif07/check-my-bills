@@ -113,7 +113,7 @@ return (
               >
                 {card.icon}
               </motion.div>
-              <p className="text-center text-xs sm:text-sm md:text-base text-[#2d1a45]">
+              <p className="text-center text-xs sm:text-sm md:text-base pt-3 text-[#2d1a45]">
                 {card.description}
               </p>
             </CardContent>
