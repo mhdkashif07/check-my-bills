@@ -56,21 +56,27 @@ export default function LogoCarousel() {
         }}
       >
         {[...logos, ...logos].map((logo, index) => (
-          <motion.div
-            key={index}
-            className="min-w-[90px] sm:min-w-[100px] md:min-w-[110px] h-[90px] sm:h-[100px] md:h-[110px] flex items-center justify-center"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            <Image
-              src={logo.src || "/placeholder.svg"}
-              alt={logo.name}
-              width={90}
-              height={100}
-              className="object-contain sm:w-[90px] sm:h-[100px] md:w-[100px] md:h-[110px]"
-            />
-          </motion.div>
-        ))}
+  <motion.div
+    key={index}
+    className="flex items-center justify-center 
+               min-w-[80px] sm:min-w-[90px] md:min-w-[110px] 
+               h-[80px] sm:h-[90px] md:h-[110px]"
+    whileHover={{ scale: 1.05 }}
+    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+  >
+    <div className="w-full h-full flex items-center justify-center overflow-hidden">
+      <Image
+        src={logo.src || "/placeholder.svg"}
+        alt={logo.name}
+        width={100}
+        height={100}
+        className="w-full h-full object-contain sm:object-contain"
+      />
+    </div>
+  </motion.div>
+))}
+
+
       </motion.div>
     </motion.div>
   );

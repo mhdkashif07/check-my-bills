@@ -168,8 +168,9 @@ const Footer = () => {
                   </svg>
                 </Link>
               </div>
-              <div className="flex justify-center pt-3 w-full">
+              <div className="flex justify-start  pt-3 w-full">
                 <Image
+               
                   src="/Energy Ombudsman Core Logo-RGB.png"
                   width={200}
                   height={200}
