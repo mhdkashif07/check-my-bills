@@ -79,25 +79,27 @@ export default function HomePage() {
         </main>
       </div>
 
-      <div className="bg-white py-12  mx-auto max-w-7xl">
-        <ComparisonFlow />
+      <div className="bg-white">
+        <div className=" py-12  mx-auto max-w-7xl">
+          <ComparisonFlow />
 
-        <div className="mt-16 bg-[#f5f0ff] py-12 px-4 rounded-lg">
-          <h2 className="text-center text-2xl font-semibold text-[#2d1a45] mb-10">
-            We compare trusted suppliers, so you&apos;re in good hands
-          </h2>
-          <LogoCarousel />
-          {/* <LogoCarousel1 /> */}
-        </div>
+          <div className="mt-16 bg-[#f5f0ff] py-12 px-4 rounded-lg">
+            <h2 className="text-center text-2xl font-semibold text-[#2d1a45] mb-10">
+              We compare trusted suppliers, so you&apos;re in good hands
+            </h2>
+            <LogoCarousel />
+            {/* <LogoCarousel1 /> */}
+          </div>
 
-        {/* Duplicate carosul */}
-        {/* <div className="mt-16 bg-[#f5f0ff] py-12 px-4 rounded-lg">
+          {/* Duplicate carosul */}
+          {/* <div className="mt-16 bg-[#f5f0ff] py-12 px-4 rounded-lg">
           <h2 className="text-center text-2xl font-semibold text-[#2d1a45] mb-10">
             We compare trusted suppliers, so you&apos;re in good hands
           </h2>
           <LogoCarousel1 />
           
         </div> */}
+        </div>
       </div>
 
       <InsuranceCategories />
