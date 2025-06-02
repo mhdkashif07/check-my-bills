@@ -32,10 +32,10 @@ const Copyright = () => {
         <p className="my-11">
           You shall maintain ownership rights over any content that you submit
           or make publicly available on or through the site (referred to as{" "}
-          <strong className="text-white">"user content"</strong>). By submitting
-          user content, you grant us a perpetual, irrevocable, transferable,
-          worldwide, royalty-free, and unrestricted license to utilize such user
-          content in any manner and for any purpose.
+          <strong className="text-white">&quot;user content&quot;</strong>). By
+          submitting user content, you grant us a perpetual, irrevocable,
+          transferable, worldwide, royalty-free, and unrestricted license to
+          utilize such user content in any manner and for any purpose.
         </p>
 
         <p className="mb-11">

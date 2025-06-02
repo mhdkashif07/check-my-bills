@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+// import { Button } from "@/components/ui/button"
 // import { Input } from "@/components/ui/input"
 
 export default function Contact() {
@@ -11,21 +11,23 @@ export default function Contact() {
     name: "",
     email: "",
     message: "",
-  })
+  });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
-    }))
-  }
+    }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
+    e.preventDefault();
+    console.log("Form submitted:", formData);
     // Handle form submission here
-  }
+  };
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
@@ -34,7 +36,8 @@ export default function Contact() {
           <div className="space-y-4">
             <h1 className="text-5xl font-bold text-black">Contact Us</h1>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Feel Free to contact us any time. We will get back to you as soon as we can!
+              Feel Free to contact us any time. We will get back to you as soon
+              as we can!
             </p>
           </div>
 
@@ -84,5 +87,5 @@ export default function Contact() {
         </div>
       </div>
     </div>
-  )
+  );
 }
