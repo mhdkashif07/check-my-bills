@@ -31,8 +31,8 @@ const features = [
 
 export default function ComparisonFeatures() {
   return (
-    <section className="bg-white py-10">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+    <section className="bg-white py-0">
+      <div className="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center gap-10 ">
         <div className="flex-shrink-0 w-full md:w-1/2 flex justify-center">
           <Image
             src="/compare-info.jpg"

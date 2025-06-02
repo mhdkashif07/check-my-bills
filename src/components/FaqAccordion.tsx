@@ -266,17 +266,18 @@ export default function FaqAccordion() {
 
   return (
     <section className="bg-gray-200 py-16 min-h-screen">
-      <h2 className="text-4xl font-bold text-center mb-12 text-black">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 text-black px-4 md:px-8">
         Frequently Asked Questions
       </h2>
+
       <div className="max-w-3xl mx-auto space-y-4 px-4">
         {visibleFaqs.map((faq, idx) => (
           <div
             key={faq.question}
-            className="bg-white rounded-2xl shadow-md  p-8 flex items-center justify-between gap-2"
+            className="bg-white rounded-2xl shadow-md  p-5 md:p-8  flex items-center justify-between gap-2"
           >
             <div className="flex-1">
-              <h3 className="text-xl font-semibold text-[#231942]">
+              <h3 className="text-[20px] md:text-[23x] font-semibold text-[#231942]">
                 {faq.question}
               </h3>
               <AnimatePresence initial={false}>
@@ -295,12 +296,13 @@ export default function FaqAccordion() {
               </AnimatePresence>
             </div>
             <button
-              className="ml-6 flex-shrink-0 bg-[#231942] rounded-lg w-14 h-13 flex items-center justify-center text-white text-3xl focus:outline-none"
-              onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-              aria-label={openIndex === idx ? "Collapse" : "Expand"}
-            >
-              {openIndex === idx ? <Minus size={32} /> : <Plus size={32} />}
-            </button>
+  className="ml-3 md:ml-6 flex-shrink-0 bg-[#231942] rounded-lg w-10 h-10 md:w-13 md:h-13 flex items-center justify-center text-white text-2xl md:text-3xl focus:outline-none"
+  onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
+  aria-label={openIndex === idx ? "Collapse" : "Expand"}
+>
+  {openIndex === idx ? <Minus size={24} /> : <Plus size={24} />}
+</button>
+
           </div>
         ))}
 
