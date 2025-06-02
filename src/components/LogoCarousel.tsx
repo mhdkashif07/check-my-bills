@@ -49,7 +49,7 @@ export default function LogoCarousel() {
             x: {
               repeat: Number.POSITIVE_INFINITY,
               repeatType: "loop",
-              duration: 30,
+              duration: 25,
               ease: "linear",
             },
           },
