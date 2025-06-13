@@ -43,7 +43,7 @@ export function MobileNav() {
             <Link href="/">
               <Image
                 src="/checkbillslogo.svg"
-                alt="SwitchPal"
+                alt="Checkmybills"
                 width={200}
                 height={200}
               />
