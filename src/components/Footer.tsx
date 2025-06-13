@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className="relative">
                   <Image
                     src="/checkbillslogo.svg"
-                    alt="SwitchPal"
+                    alt="Checkmybills"
                     width={225}
                     height={225}
                   />
@@ -170,7 +170,6 @@ const Footer = () => {
               </div>
               <div className="flex justify-start  pt-3 w-full">
                 <Image
-               
                   src="/Energy Ombudsman Core Logo-RGB.png"
                   width={200}
                   height={200}

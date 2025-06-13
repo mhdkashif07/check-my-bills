@@ -1,6 +1,6 @@
 import type React from "react";
 import Image from "next/image";
-import { Zap, Wifi, Smartphone, PhoneCall } from "lucide-react";
+import { Zap, Wifi, Smartphone, Car } from "lucide-react";
 import LogoCarousel from "@/components/LogoCarousel";
 // import LogoCarousel1 from "@/components/LogoCarousel1";
 import ComparisonFlow from "@/components/ComparisonFlow";
@@ -17,12 +17,12 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#0a1128] text-white">
       <div className="w-full h-full">
-        <main className="min-h-screen">
-          <section className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-4 pt-25">
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+        <main className="min-h-screen ">
+          <section className="flex items-center justify-center min-h-screen container mx-auto max-w-6xl px-4 sm:px-6 lg:px-4">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-10 w-full">
               {/* Left Side - Text Section */}
               <div className="flex-1 w-full space-y-4">
-                <h1 className="text-3xl sm:text-4xl md:text-1xl font-bold text-white leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
                   Check, Compare and Switch!
                 </h1>
                 <p className="text-base sm:text-lg font-medium text-emerald-400">
@@ -38,35 +38,38 @@ export default function HomePage() {
                     <ServiceCard
                       icon={<Zap />}
                       title="Energy"
-                      description="Get the best electricity and gas prices"
+                      description="Find the best energy prices."
                     />
                   </Link>
-                  <Link href="/sim-only-deals">
+                  <Link
+                    href="https://www.quotezone.co.uk/SetAffiliate.php?aid=B2S9J9-001&type=car"
+                    target="_blank"
+                  >
                     <ServiceCard
-                      icon={<PhoneCall />}
-                      title="Sim Only Deals"
-                      description="Affordable SIM-only plans to keep you connected."
+                      icon={<Car />}
+                      title="Car Insurance"
+                      description="Compare top car insurance."
                     />
                   </Link>
                   <Link href="/broadband">
                     <ServiceCard
                       icon={<Wifi />}
                       title="Broadband"
-                      description="Broadband packages to suit your needs"
+                      description="Choose fast broadband deals."
                     />
                   </Link>
                   <Link href="/mobile-phones">
                     <ServiceCard
                       icon={<Smartphone />}
                       title="Mobile Phones"
-                      description="Explore our latest mobile deals and plans."
+                      description="Latest mobile offers & plans."
                     />
                   </Link>
                 </div>
               </div>
 
-              {/* Right Side - Image Section (Hidden on sm screens) */}
-              <div className="  flex-1 w-full max-w-sm md:max-w-md lg:max-w-lg pb-5">
+              {/* Right Side - Image Section */}
+              <div className="flex-1 w-full max-w-sm md:max-w-md lg:max-w-lg pb-5">
                 <Image
                   src="/hero-img.svg"
                   alt="About us"
@@ -87,20 +90,11 @@ export default function HomePage() {
 
           <div className="mt-16 bg-[#f5f0ff] py-12 px-4 rounded-lg">
             <h2 className="text-center text-2xl font-semibold text-[#2d1a45] mb-10">
-              We compare trusted suppliers, so you&apos;re in good hands
+              Compare Top Brands and New Alternatives.
             </h2>
             <LogoCarousel />
             {/* <LogoCarousel1 /> */}
           </div>
-
-          {/* Duplicate carosul */}
-          {/* <div className="mt-16 bg-[#f5f0ff] py-12 px-4 rounded-lg">
-          <h2 className="text-center text-2xl font-semibold text-[#2d1a45] mb-10">
-            We compare trusted suppliers, so you&apos;re in good hands
-          </h2>
-          <LogoCarousel1 />
-          
-        </div> */}
         </div>
       </div>
 
