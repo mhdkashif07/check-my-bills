@@ -25,11 +25,11 @@ const Footer = () => {
               <p className="text-[14px] mt-5">Email: info@checkmybills.co.uk</p>
               <div className="text-base">
                 <p className="">
-                  <span className="font-semibold">Checkmybills.co.uk </span> is
-                  registered trademark of Platform 101 L company No. 15681880
-                  Registe address 27 Old Gloucester Stre London, WC1N 3
-                  Checkmybills.co.uk is trading st of Platform 101 Ltd. © 2025
-                  Rights Reserved.
+                  <span className="font-semibold">Checkmybills.co.uk</span> is
+                  registered trademark of Platform 101 Ltd, company No. 15681880
+                  Registered address 27 Old Gloucester Street, London, WC1N 3AX.
+                  Checkmybills.co.uk is trading style of Platform 101 Ltd. ©
+                  2025 All Rights Reserved.
                 </p>
               </div>
             </div>
@@ -168,17 +168,17 @@ const Footer = () => {
                   </svg>
                 </Link>
               </div>
-              <div className="flex justify-start  pt-3 w-full">
+              <div className="flex justify-start pt-0 md:pt-3 w-full">
                 <Image
                   src="/Energy Ombudsman Core Logo-RGB.png"
-                  width={200}
+                  width={180}
                   height={200}
                   alt=""
                 />
                 <Image
                   src="/download-ICO-logo.png"
                   width={100}
-                  height={100}
+                  height={200}
                   alt=""
                 />
               </div>

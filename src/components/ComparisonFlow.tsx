@@ -16,17 +16,17 @@ const brands = [
 
 export default function BrandsGrid() {
   return (
-    <section className="py-10">
+    <section className="py-3 md:py-10">
       <div className="max-w-5xl mx-auto px-4 text-center">
         <h2 className="text-2xl text-black sm:text-3xl font-bold mb-8">
-          Top Brands We Compare
+          The UK&apos;s Fastest & Most Reliable Broadband Deals
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4">
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="bg-white p-4 rounded-md shadow-sm flex items-center justify-center w-44 h-24"
+              className="bg-white p-4 rounded-md shadow-sm flex items-center justify-center w-28 md:w-44  h-24"
             >
               <Image
                 src={brand.src}
