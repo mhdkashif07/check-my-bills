@@ -21,7 +21,7 @@ export default function HomePage() {
           <section className="flex items-center justify-center min-h-screen container mx-auto max-w-6xl px-4 sm:px-6 lg:px-4">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-10 w-full">
               {/* Left Side - Text Section */}
-              <div className="flex-1 w-full space-y-4">
+              <div className="flex-1 w-full pt-12 space-y-4">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
                   Check, Compare and Switch!
                 </h1>
