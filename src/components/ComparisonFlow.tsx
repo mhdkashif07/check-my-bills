@@ -14,19 +14,19 @@ const brands = [
   { name: "Vodafone", src: "/client-9.png" },
 ];
 
-export default function BrandsGrid() {
+const BrandsGrid = () => {
   return (
-    <section className="py-3 md:py-10">
-      <div className="max-w-5xl mx-auto px-4 text-center">
+    <section className="py-3 md:py-10 ">
+      <div className="max-w-5xl mx-auto sm:px-4 text-center">
         <h2 className="text-2xl text-black sm:text-3xl font-bold mb-8">
-          The UK&apos;s Fastest & Most Reliable Broadband Deals
+          Compare Top Brands and New Alternatives.
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-3">
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="bg-white p-4 rounded-md shadow-sm flex items-center justify-center w-28 md:w-44  h-24"
+              className="bg-white p-4 rounded-md shadow-sm flex items-center justify-center w-36 h-26"
             >
               <Image
                 src={brand.src}
@@ -41,4 +41,6 @@ export default function BrandsGrid() {
       </div>
     </section>
   );
-}
+};
+
+export default BrandsGrid;
