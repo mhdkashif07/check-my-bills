@@ -12,6 +12,8 @@ import Link from "next/link";
 import TrustPilot1 from "@/components/TrustPilot1";
 
 export default function HomePage() {
+  console.log("testing");
+
   return (
     <div className="min-h-screen   text-white">
       <div className="w-full h-lvh bg-[#0a1128]">
