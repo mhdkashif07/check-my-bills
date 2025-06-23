@@ -6,7 +6,7 @@ import {
   ArrowRight,
   Check,
   X,
-  MoveRight,
+  // MoveRight,
   PoundSterlingIcon as Pound,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -93,61 +93,59 @@ export default function ComparisonFlow() {
   ];
 
   return (
-<div className="flex flex-wrap justify-center items-center gap-6 px-4 md:px-8 max-w-6xl mx-auto">
-  {cards.map((card, index) => (
-    <div key={index} className="flex items-center gap-4">
-      {/* Card */}
-      <motion.div
-        className="w-[280px] sm:w-[300px]"
-        onHoverStart={() => setHoveredCard(index)}
-        onHoverEnd={() => setHoveredCard(null)}
-        whileHover={{
-          y: -10,
-          boxShadow:
-            "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-          transition: { type: "spring", stiffness: 400, damping: 10 },
-        }}
-      >
-        <Card className="h-full border-2 transition-all duration-300 hover:border-[#2d1a45]">
-          <CardHeader className="text-center pb-2">
-            <CardTitle className="text-xl font-bold text-[#2d1a45]">
-              {card.title}
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="flex flex-col items-center space-y-4">
-            <motion.div
-              animate={
-                hoveredCard === index
-                  ? {
-                      scale: 1.1,
-                      transition: {
-                        type: "spring",
-                        stiffness: 300,
-                        damping: 10,
-                      },
-                    }
-                  : { scale: 1 }
-              }
-            >
-              {card.icon}
-            </motion.div>
-            <p className="text-center text-sm text-[#2d1a45]">
-              {card.description}
-            </p>
-          </CardContent>
-        </Card>
-      </motion.div>
+    <div className="flex flex-wrap justify-center items-center gap-6 px-4 md:px-8 max-w-6xl mx-auto">
+      {cards.map((card, index) => (
+        <div key={index} className="flex items-center gap-4">
+          {/* Card */}
+          <motion.div
+            className="w-[280px] sm:w-[300px]"
+            onHoverStart={() => setHoveredCard(index)}
+            onHoverEnd={() => setHoveredCard(null)}
+            whileHover={{
+              y: -10,
+              boxShadow:
+                "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              transition: { type: "spring", stiffness: 400, damping: 10 },
+            }}
+          >
+            <Card className="h-full border-2 transition-all duration-300 hover:border-[#2d1a45]">
+              <CardHeader className="text-center pb-2">
+                <CardTitle className="text-xl font-bold text-[#2d1a45]">
+                  {card.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="flex flex-col items-center space-y-4">
+                <motion.div
+                  animate={
+                    hoveredCard === index
+                      ? {
+                          scale: 1.1,
+                          transition: {
+                            type: "spring",
+                            stiffness: 300,
+                            damping: 10,
+                          },
+                        }
+                      : { scale: 1 }
+                  }
+                >
+                  {card.icon}
+                </motion.div>
+                <p className="text-center text-sm text-[#2d1a45]">
+                  {card.description}
+                </p>
+              </CardContent>
+            </Card>
+          </motion.div>
 
-      {/* Arrow – only show between cards */}
-      {index < cards.length - 1 && (
-        <div className="hidden sm:flex justify-center items-center h-full">
-          <ArrowRight className="text-[#2d1a45] w-6 h-6" />
+          {/* Arrow – only show between cards */}
+          {index < cards.length - 1 && (
+            <div className="hidden sm:flex justify-center items-center h-full">
+              <ArrowRight className="text-[#2d1a45] w-6 h-6" />
+            </div>
+          )}
         </div>
-      )}
+      ))}
     </div>
-  ))}
-</div>
-
-
   );
 }
