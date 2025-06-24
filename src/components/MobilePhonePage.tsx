@@ -18,7 +18,7 @@ const MobilePhonePage = ({
 
   return (
     <>
-      <div
+      {/* <div
         className="brands-banner dark-background responsive-image"
         data-aos="fade"
         style={{ backgroundImage: "url(/img/mobile-banner.webp)" }}
@@ -30,7 +30,7 @@ const MobilePhonePage = ({
           backgroundImage: "url(/img/Banner-Mobile-02.jpg)",
           height: "480px",
         }}
-      ></div>
+      ></div> */}
       <main className="p-6">
         <h1 className="text-xl font-semibold mb-4">{title}</h1>
         <div

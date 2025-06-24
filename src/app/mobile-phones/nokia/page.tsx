@@ -5,7 +5,7 @@ export default function NokiaPhones() {
     <MobilePhonePage
       title="Nokia Phone Deals"
       widgetId="check-my-bills-mobile-504"
-      filters='{"brands":[/* NOKIA_BRAND_ID */]}'
+      filters='{"brands":[4]}'
     />
   );
 }

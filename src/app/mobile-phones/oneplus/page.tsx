@@ -5,7 +5,7 @@ export default function OnePlusPhones() {
     <MobilePhonePage
       title="OnePlus Phone Deals"
       widgetId="check-my-bills-mobile-504"
-      filters='{"brands":[/* ONEPLUS_BRAND_ID */]}'
+      filters='{"brands":[63]}'
     />
   );
 }
