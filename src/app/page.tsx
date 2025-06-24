@@ -7,9 +7,8 @@ import ComparisonFlow from "@/components/ComparisonFlow";
 import InsuranceCategories from "@/components/InsuranceCategories";
 import ComparisonFeatures from "@/components/ComparisonFeatures";
 import FaqsList from "@/components/FaqsList";
-// import TrustPilot from "@/components/TrustPilot";
+import TrustPilot from "@/components/TrustPilot";
 import Link from "next/link";
-import TrustPilot1 from "@/components/TrustPilot1";
 
 export default function HomePage() {
   return (
@@ -99,8 +98,7 @@ export default function HomePage() {
       <InsuranceCategories />
       <ComparisonFeatures />
       <FaqsList />
-      {/* <TrustPiloT /> */}
-      <TrustPilot1 />
+      <TrustPilot />
     </div>
   );
 }

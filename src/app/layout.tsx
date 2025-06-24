@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Check My Bills",
   description: "Check My Bills",
-  icons: "/checkbillslogo.svg",
+  icons: "/favicon-icon.png",
 };
 
 export default function RootLayout({
@@ -32,6 +32,13 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:title" content="Check My Bills" key="title" />
+        {/* trustpilot script */}
+        <Script
+          src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+          strategy="afterInteractive"
+          async
+        />
+
         {/* Google Analytics Script */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SGEKK7287N"
