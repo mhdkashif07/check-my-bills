@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useStickeeWidget } from "@/hooks/useStickeeWidget";
-import Loader from "@/components/Loader";
 
 interface BroadbandPageProps {
   title: string;
@@ -12,6 +11,7 @@ interface BroadbandPageProps {
 }
 
 const BroadbandPage = ({
+  title,
   widgetId,
   fixedFilters,
   filters,
@@ -20,14 +20,13 @@ const BroadbandPage = ({
 
   return (
     <main className="p-6">
+      <h1 className="text-xl font-semibold mb-4">{title}</h1>
       <div
         data-stickee-widget-id={widgetId}
         {...(fixedFilters ? { "data-fixed-filters": fixedFilters } : {})}
         {...(filters ? { "data-filters": filters } : {})}
       >
-        <div className="animate-fade-in">
-          <Loader />
-        </div>
+        Loading...
       </div>
     </main>
   );

@@ -2,28 +2,24 @@
 
 import React from "react";
 import { useStickeeWidget } from "@/hooks/useStickeeWidget";
-import Loader from "@/components/Loader";
-// import Image from "next/image";
 
 const BroadBandPage = () => {
   useStickeeWidget();
 
   return (
     <>
-      {/* <Image
-        src="/broadband-banner.svg"
-        alt="Broadband Banner"
-        className="w-full h-auto px-6 py-3"
-        width={200}
-        height={200}
-      /> */}
+      <div
+        className="brands-banner dark-background responsive-image"
+        data-aos="fade"
+      ></div>
+      <div
+        className="brands-banner dark-background responsive-image-sm"
+        data-aos="fade"
+      ></div>
 
       <main className="p-6">
-        <div data-stickee-widget-id="checkmybills-503">
-          <div className="animate-fade-in">
-            <Loader />
-          </div>
-        </div>
+        <h1 className="text-xl font-semibold mb-4">Check My Bills</h1>
+        <div data-stickee-widget-id="checkmybills-503">Loading...</div>
       </main>
     </>
   );
