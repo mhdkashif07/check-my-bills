@@ -44,7 +44,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/faq" className="hover:text-gray-300">
+                  <Link href="/faqs" className="hover:text-gray-300">
                     FAQ
                   </Link>
                 </li>
@@ -133,7 +133,7 @@ const Footer = () => {
               <p className="mt-4">Our expertise always ready to assist you.</p>
               <div className="flex gap-4 mt-4">
                 <Link
-                  href=""
+                  href="https://www.facebook.com/checkmybills.co.uk"
                   aria-label="Instagram"
                   className="hover:text-[#fe2d00] transition-colors duration-500"
                 >
