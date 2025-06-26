@@ -1,6 +1,6 @@
 // import Image from "next/image";
 // import { div } from "framer-motion/client";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -14,7 +14,7 @@ const Trustpilot = () => {
         <div className="flex flex-col  items-center p-6 shadow- md w-full max-w-xs  mx-auto text-center ">
           <h2 className="text-2xl font-semibold text-gray-800">Excellent</h2>
 
-          <div className="mt-2 mb-2 flex justify-center md:px-8">
+          {/* <div className="mt-2 mb-2 flex justify-center md:px-8">
             <Image
               src="/stars-4.5.svg"
               alt="4.5 stars"
@@ -22,7 +22,7 @@ const Trustpilot = () => {
               width={170}
               height={32}
             />
-          </div>
+          </div> */}
 
           <p className="text-sm text-gray-900">
             Based on{" "}

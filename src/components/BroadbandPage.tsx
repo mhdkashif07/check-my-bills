@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useStickeeWidget } from "@/hooks/useStickeeWidget";
+// import { useStickeeWidget } from "@/hooks/useStickeeWidget";
 
 interface BroadbandPageProps {
   title: string;
@@ -16,11 +16,11 @@ const BroadbandPage = ({
   fixedFilters,
   filters,
 }: BroadbandPageProps) => {
-  useStickeeWidget();
+  // useStickeeWidget();
 
   return (
     <main className="p-6">
-      <h1 className="text-xl font-semibold mb-4">{title}</h1>
+      <h1 className="text-xl text-center font-semibold mb-4">{title}</h1>
       <div
         data-stickee-widget-id={widgetId}
         {...(fixedFilters ? { "data-fixed-filters": fixedFilters } : {})}

@@ -41,6 +41,12 @@ export default function RootLayout({
 
         {/* Google Analytics Script */}
         <Script
+          src="https://whitelabels.stickeemobiles.co.uk/js/loader.js"
+          async
+          strategy="beforeInteractive"
+        />
+        {/* Google Analytics Script */}
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SGEKK7287N"
           strategy="afterInteractive"
         />

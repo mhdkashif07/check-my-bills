@@ -39,8 +39,8 @@ const Header = () => {
             <Link href="/">Home</Link>
             <NavItem title="Energy" />
             <Link href="/guides">Guides</Link>
-            <Link href="/broadband">Broadband</Link>
-            <Link href="/mobile-phones">Mobile Phones</Link>
+            <a href="/broadband">Broadband</a>
+            <a href="/mobile-phones">Mobile Phones</a>
             <NavItem title="Insurance" />
             <NavItem title="Deals" />
           </div>
@@ -71,76 +71,76 @@ function NavItem({ title }: { title: string }) {
                 <div className="font-bold mb-2">MOBILE PHONES</div>
                 <ul className="space-y-3 text-base">
                   <li>
-                    <Link
+                    <a
                       href="/mobile-phones/apple"
                       className="hover:text-emerald-400"
                     >
                       Apple
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/mobile-phones/google"
                       className="hover:text-emerald-400"
                     >
                       Google
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/mobile-phones/honor"
                       className="hover:text-emerald-400"
                     >
                       Honor
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/mobile-phones/motorola"
                       className="hover:text-emerald-400"
                     >
                       Motorola
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/mobile-phones/samsung"
                       className="hover:text-emerald-400"
                     >
                       Samsung
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/mobile-phones/nokia"
                       className="hover:text-emerald-400"
                     >
                       Nokia
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/mobile-phones/oneplus"
                       className="hover:text-emerald-400"
                     >
                       OnePlus
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/mobile-phones/oppo"
                       className="hover:text-emerald-400"
                     >
                       OPPO
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/mobile-phones/xiaomi"
                       className="hover:text-emerald-400"
                     >
                       Xiaomi
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -149,68 +149,62 @@ function NavItem({ title }: { title: string }) {
                 <div className="font-bold mb-2">BROADBAND</div>
                 <ul className="space-y-3 text-base">
                   <li>
-                    <Link
-                      href="/broadband/sky"
-                      className="hover:text-emerald-400"
-                    >
+                    <a href="/broadband/sky" className="hover:text-emerald-400">
                       Sky Deals
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/broadband/virgin-media"
                       className="hover:text-emerald-400"
                     >
                       Virgin Media Deals
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      href="/broadband/bt"
-                      className="hover:text-emerald-400"
-                    >
+                    <a href="/broadband/bt" className="hover:text-emerald-400">
                       BT Deals
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/broadband/plusnet"
                       className="hover:text-emerald-400"
                     >
                       Plusnet Deals
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/broadband/talktalk"
                       className="hover:text-emerald-400"
                     >
                       Talk Talk Deals
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/broadband/under-25"
                       className="hover:text-emerald-400"
                     >
                       Deals under £25
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/broadband/under-30"
                       className="hover:text-emerald-400"
                     >
                       Deals under £30
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/broadband/sky-tv"
                       className="hover:text-emerald-400"
                     >
                       Sky TV Deals
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -219,20 +213,20 @@ function NavItem({ title }: { title: string }) {
                 <div className="font-bold mb-2">BROADBAND TERM</div>
                 <ul className="space-y-3 text-base">
                   <li>
-                    <Link
+                    <a
                       href="/broadband/type/12-month-contract"
                       className="hover:text-emerald-400"
                     >
                       12 month contract
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="/broadband/type/24-month-contract"
                       className="hover:text-emerald-400"
                     >
                       24 month contract
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>

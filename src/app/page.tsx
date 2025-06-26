@@ -48,20 +48,20 @@ export default function HomePage() {
                       description="Compare top car insurance."
                     />
                   </Link>
-                  <Link href="/broadband">
+                  <a href="/broadband">
                     <ServiceCard
                       icon={<Wifi />}
                       title="Broadband"
                       description="Choose fast broadband deals."
                     />
-                  </Link>
-                  <Link href="/mobile-phones">
+                  </a>
+                  <a href="/mobile-phones">
                     <ServiceCard
                       icon={<Smartphone />}
                       title="Mobile Phones"
                       description="Latest mobile offers & plans."
                     />
-                  </Link>
+                  </a>
                 </div>
               </div>
 

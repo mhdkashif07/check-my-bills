@@ -81,13 +81,13 @@ function TopNavLink({
   href: string;
 }) {
   return (
-    <Link
+    <a
       href={href}
       className="flex items-center gap-2 py-2 border-b border-gray-800 hover:text-emerald-400 transition-colors"
     >
       <span className="text-emerald-500">{icon}</span>
       <span>{title}</span>
-    </Link>
+    </a>
   );
 }
 
@@ -131,57 +131,51 @@ function NavAccordionItem({
           )}
           {title === "Broadband" && (
             <>
-              <Link href="/broadband" className="block hover:text-emerald-400">
+              <a href="/broadband" className="block hover:text-emerald-400">
                 Compare Deals
-              </Link>
-              <Link
-                href="/broadband/sky"
-                className="block hover:text-emerald-400"
-              >
+              </a>
+              <a href="/broadband/sky" className="block hover:text-emerald-400">
                 Sky Deals
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/virgin-media"
                 className="block hover:text-emerald-400"
               >
                 Virgin Media Deals
-              </Link>
-              <Link
-                href="/broadband/bt"
-                className="block hover:text-emerald-400"
-              >
+              </a>
+              <a href="/broadband/bt" className="block hover:text-emerald-400">
                 BT Deals
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/plusnet"
                 className="block hover:text-emerald-400"
               >
                 Plusnet Deals
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/talktalk"
                 className="block hover:text-emerald-400"
               >
                 Talk Talk Deals
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/under-25"
                 className="block hover:text-emerald-400"
               >
                 Deals under £25
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/under-30"
                 className="block hover:text-emerald-400"
               >
                 Deals under £30
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/sky-tv"
                 className="block hover:text-emerald-400"
               >
                 Sky TV Deals
-              </Link>
+              </a>
             </>
           )}
           {title === "Insurance" && (
@@ -231,124 +225,118 @@ function NavAccordionItem({
           {title === "Deals" && (
             <>
               <div className="font-bold mt-2 mb-1">MOBILE PHONES</div>
-              <Link
+              <a
                 href="/mobile-phones/apple"
                 className="block hover:text-emerald-400"
               >
                 Apple
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/mobile-phones/google"
                 className="block hover:text-emerald-400"
               >
                 Google
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/mobile-phones/honor"
                 className="block hover:text-emerald-400"
               >
                 Honor
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/mobile-phones/motorola"
                 className="block hover:text-emerald-400"
               >
                 Motorola
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/mobile-phones/samsung"
                 className="block hover:text-emerald-400"
               >
                 Samsung
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/mobile-phones/nokia"
                 className="block hover:text-emerald-400"
               >
                 Nokia
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/mobile-phones/oneplus"
                 className="block hover:text-emerald-400"
               >
                 OnePlus
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/mobile-phones/oppo"
                 className="block hover:text-emerald-400"
               >
                 OPPO
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/mobile-phones/xiaomi"
                 className="block hover:text-emerald-400"
               >
                 Xiaomi
-              </Link>
+              </a>
 
               <div className="font-bold mt-4 mb-1">BROADBAND</div>
-              <Link
-                href="/broadband/sky"
-                className="block hover:text-emerald-400"
-              >
+              <a href="/broadband/sky" className="block hover:text-emerald-400">
                 Sky Deals
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/virgin-media"
                 className="block hover:text-emerald-400"
               >
                 Virgin Media Deals
-              </Link>
-              <Link
-                href="/broadband/bt"
-                className="block hover:text-emerald-400"
-              >
+              </a>
+              <a href="/broadband/bt" className="block hover:text-emerald-400">
                 BT Deals
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/plusnet"
                 className="block hover:text-emerald-400"
               >
                 Plusnet Deals
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/talktalk"
                 className="block hover:text-emerald-400"
               >
                 Talk Talk Deals
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/under-25"
                 className="block hover:text-emerald-400"
               >
                 Deals under £25
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/under-30"
                 className="block hover:text-emerald-400"
               >
                 Deals under £30
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/sky-tv"
                 className="block hover:text-emerald-400"
               >
                 Sky TV Deals
-              </Link>
+              </a>
 
               <div className="font-bold mt-4 mb-1">BROADBAND TERM</div>
-              <Link
+              <a
                 href="/broadband/type/12-month-contract"
                 className="block hover:text-emerald-400"
               >
                 12 month contract
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/broadband/type/24-month-contract"
                 className="block hover:text-emerald-400"
               >
                 24 month contract
-              </Link>
+              </a>
             </>
           )}
         </div>

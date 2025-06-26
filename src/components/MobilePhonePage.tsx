@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useStickeeWidget } from "@/hooks/useStickeeWidget";
+// import { useStickeeWidget } from "@/hooks/useStickeeWidget";
 
 interface MobilePhonePageProps {
   title: string;
@@ -14,7 +14,7 @@ const MobilePhonePage = ({
   widgetId,
   filters,
 }: MobilePhonePageProps) => {
-  useStickeeWidget();
+  // useStickeeWidget();
 
   return (
     <>
@@ -32,7 +32,7 @@ const MobilePhonePage = ({
         }}
       ></div> */}
       <main className="p-6">
-        <h1 className="text-xl font-semibold mb-4">{title}</h1>
+        <h1 className="text-xl text-center font-semibold ">{title}</h1>
         <div
           data-stickee-widget-id={widgetId}
           {...(filters ? { "data-filters": filters } : {})}

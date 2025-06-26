@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import { useStickeeWidget } from "@/hooks/useStickeeWidget";
+// import { useStickeeWidget } from "@/hooks/useStickeeWidget";
 
 const BroadBandPage = () => {
-  useStickeeWidget();
+  // useStickeeWidget();
 
   return (
     <>
@@ -18,7 +18,7 @@ const BroadBandPage = () => {
       ></div>
 
       <main className="p-6">
-        <h1 className="text-xl font-semibold mb-4">Check My Bills</h1>
+        <h1 className="text-2xl font-semibold mb-4 text-center">BroadBand</h1>
         <div data-stickee-widget-id="checkmybills-503">Loading...</div>
       </main>
     </>
