@@ -84,44 +84,44 @@ const Footer = () => {
               <h3 className="text-[24px] mb-7">Popular Phones</h3>
               <ul className="space-y-5 text-base mb-2">
                 <li>
-                  <Link
+                  <a
                     href="/mobile-phones/apple"
                     className="hover:text-gray-300"
                   >
                     Apple
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/mobile-phones/google"
                     className="hover:text-gray-300"
                   >
                     Google
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/mobile-phones/honor"
                     className="hover:text-gray-300"
                   >
                     Honor
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/mobile-phones/motorola"
                     className="hover:text-gray-300"
                   >
                     Motorola
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
+                  <a
                     href="/mobile-phones/samsung"
                     className="hover:text-gray-300"
                   >
                     Samsung
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
