@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Check My Bills",
   description: "Check My Bills",
-  icons: "/favicon-icon.png",
+  icons: "/favicon.png",
 };
 
 export default function RootLayout({

@@ -113,13 +113,13 @@ function ServiceCard({
   description: string;
 }) {
   return (
-    <div className="bg-[#0f1c3f] p-3 md:p-3 rounded-lg border border-gray-800 hover:border-emerald-300 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1 hover:scale-[0.98] cursor-pointer">
+    <div className="bg-[#0f1c3f] p-3 md:p-3 rounded-lg border border-gray-800 hover:border-[#00f9ff] transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1 hover:scale-[0.98] cursor-pointer">
       <div className="flex items-start gap-1 ">
-        <div className="text-emerald-500 h-6 w-6 sm:h-10 sm:w-10 flex-shrink-0">
+        <div className="text-[#00f9ff] h-6 w-6 sm:h-10 sm:w-10 flex-shrink-0">
           {icon}
         </div>
         <div className="flex flex-col">
-          <h3 className="font-semibold text-base sm:text-lg mb-1 text-white hover:text-emerald-400 transition-colors duration-200">
+          <h3 className="font-semibold text-base sm:text-lg mb-1 text-white hover:text-[#00f9ff] transition-colors duration-200">
             {title}
           </h3>
           <p className="text-gray-300 text-xs sm:text-sm">

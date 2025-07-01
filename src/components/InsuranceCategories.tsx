@@ -44,7 +44,7 @@ const Card: React.FC<InsuranceCategory> = ({ label, icon: Icon, href }) => {
       className="flex justify-center sm:w-auto px-0.5 md:px-1 xl:px-1"
     >
       <div className="flex flex-col justify-center items-center bg-white  rounded-xl shadow-md p-3 md:p-4 xl:p-5 hover:shadow-lg transition-all border border-gray-100 w-[145px] h-[100px] md:w-[160px] md:h-[170px] xl:w-[180px] xl:h-[190px]">
-        <Icon className="h-6 w-6 text-[#7bc043] mb-2 md:h-8 md:w-8 xl:h-10 xl:w-10" />
+        <Icon className="h-6 w-6 text-[#fe2d00] mb-2 md:h-8 md:w-8 xl:h-10 xl:w-10" />
         <span className="text-[#012348] font-semibold text-xs text-center md:text-sm xl:text-base">
           {label}
         </span>
